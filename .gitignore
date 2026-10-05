@@ -1,0 +1,3 @@
+.DS_Store
+# Kişisel veri içerir (adres, maskeli telefon, kart son haneleri): git'e girmesin
+*/*-siparisler.json
