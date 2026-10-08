@@ -1,0 +1,122 @@
+[
+  {
+    "orderNo": "1000000001",
+    "status": "Sipariş tamamlandı",
+    "date": "02 Ekim 2026",
+    "total": "1.299,00 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Örnek Mah. Deneme Sk. No:1 D:2",
+      "region": "Örnek Mah. Merkez / İstanbul",
+      "recipient": "Örnek Kişi"
+    },
+    "shipments": [
+      {
+        "seller": "Örnek Mağaza",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "04 Eki Paz 2026, 17:38",
+        "receivedBy": "Örnek Kişi",
+        "trackingCode": "10000000000001",
+        "items": [
+          {
+            "name": "Örnek Kablosuz Kulaklık",
+            "quantity": 1,
+            "price": "999,00 TL",
+            "unitPrice": "999,00 TL",
+            "productCode": "HBV0000000001",
+            "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000001",
+            "image": "https://example.com/urun.jpg"
+          },
+          {
+            "name": "Örnek USB-C Kablo",
+            "quantity": 2,
+            "price": "300,00 TL",
+            "unitPrice": "150,00 TL",
+            "productCode": "HBV0000000002",
+            "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000002",
+            "image": "https://example.com/urun.jpg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "1.299,00 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "0000 00** **** 0000"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "1.299,00 TL",
+      "Genel toplam": "1.299,00 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Örnek Kablosuz Kulaklık",
+        "quantity": 1,
+        "price": "999,00 TL",
+        "unitPrice": "999,00 TL",
+        "productCode": "HBV0000000001",
+        "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000001",
+        "image": "https://example.com/urun.jpg",
+        "seller": "Örnek Mağaza",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10000000000001"
+      },
+      {
+        "name": "Örnek USB-C Kablo",
+        "quantity": 2,
+        "price": "300,00 TL",
+        "unitPrice": "150,00 TL",
+        "productCode": "HBV0000000002",
+        "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000002",
+        "image": "https://example.com/urun.jpg",
+        "seller": "Örnek Mağaza",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10000000000001"
+      }
+    ]
+  },
+  {
+    "orderNo": "1000000002",
+    "status": "İptal edildi",
+    "date": "15 Eylül 2026",
+    "total": "249,90 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Örnek Mah. Deneme Sk. No:1 D:2",
+      "region": "Örnek Mah. Merkez / İstanbul",
+      "recipient": "Örnek Kişi"
+    },
+    "shipments": [],
+    "payments": [
+      {
+        "amount": "249,90 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "0000 00** **** 0000"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "249,90 TL",
+      "Genel toplam": "249,90 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Örnek Telefon Kılıfı",
+        "quantity": 1,
+        "price": "249,90 TL",
+        "unitPrice": "249,90 TL",
+        "productCode": "HBV0000000003",
+        "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000003",
+        "image": "https://example.com/urun.jpg",
+        "seller": "Örnek Mağaza",
+        "deliveryStatus": "İptal edildi",
+        "trackingCode": "10000000000001"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+﻿site,tarih,siparis_no,urun,adet,birim_fiyat,satir_toplam,satici,kategori,durum,satin_alindi
+hepsiburada,2026-10-02,1000000001,Örnek Kablosuz Kulaklık,1,999.0,999.0,Örnek Mağaza,-,Teslim edildi,evet
+hepsiburada,2026-10-02,1000000001,Örnek USB-C Kablo,2,150.0,300.0,Örnek Mağaza,-,Teslim edildi,evet
+trendyol,2026-09-25,900000001,Örnek A4 Fotokopi Kağıdı 500'lü,2,199.0,398.0,Örnek Satıcı,Fotokopi & Baskı Kağıtları,Teslim edildi,evet
+amazon,2026-09-22,404-0000000-0000001,Örnek Mekanik Klavye,1,1000.05,1000.05,Örnek Satıcı,-,Teslim edildi,evet
+amazon,2026-09-22,404-0000000-0000001,Örnek Mouse Pad,2,265.0,530.0,Amazon.com.tr,-,-,evet
+hepsiburada,2026-09-15,1000000002,Örnek Telefon Kılıfı,1,249.9,249.9,Örnek Mağaza,-,İptal edildi,hayır
+trendyol,2026-08-10,900000002,Örnek Masa Lambası,1,749.0,749.0,Örnek Satıcı,Aydınlatma,İade edildi,hayır
+milla,2026-07-03,800000001,Örnek Basic Tişört,2,299.99,599.98,Örnek Satıcı,Tişört,Teslim edildi,evet
+amazon,2026-06-11,404-0000000-0000002,Örnek Su Matarası,1,399.0,399.0,Örnek Satıcı,-,İptal edildi,hayır

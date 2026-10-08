@@ -1,3 +1,8 @@
 .DS_Store
+__pycache__/
 # Kişisel veri içerir (adres, maskeli telefon, kart son haneleri): git'e girmesin
 */*-siparisler.json
+# analiz.py çıktıları: satın alma geçmişi
+/satin-alinanlar.csv
+/ozet.md
+/trendyol-milla/milla-ozet.md

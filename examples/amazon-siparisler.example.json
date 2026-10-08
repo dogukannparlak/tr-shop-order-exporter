@@ -1,0 +1,107 @@
+[
+  {
+    "orderNo": "404-0000000-0000001",
+    "date": "2026-09-22",
+    "dateText": "22 Eylül 2026",
+    "total": 1530.05,
+    "amounts": {
+      "Ürün Ara Toplamı": 1530.05,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 1275.04,
+      "KDV": 255,
+      "Toplam": 1530.05,
+      "Genel Toplam": 1530.05
+    },
+    "check": {
+      "itemsSum": 1530.05,
+      "subTotal": 1530.05,
+      "totalMinusShipping": 1530.05,
+      "match": true
+    },
+    "address": {
+      "name": "Örnek Kişi",
+      "street": "Örnek Mah. Deneme Sk. No:1 D:2",
+      "city": "İstanbul",
+      "neighborhood": "Örnek Mah.",
+      "district": "Merkez",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Örnek Kişi, Örnek Mah. Deneme Sk. No:1 D:2, İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "0000",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard0000 ile biten"
+    },
+    "items": [
+      {
+        "name": "Örnek Mekanik Klavye",
+        "asin": "B000000001",
+        "url": "https://www.amazon.com.tr/dp/B000000001",
+        "image": "https://example.com/urun.jpg",
+        "seller": "Örnek Satıcı",
+        "quantity": 1,
+        "unitPrice": 1000.05,
+        "lineTotal": 1000.05,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 23 Eylül Paket doğrudan müşteriye teslim edildi."
+      },
+      {
+        "name": "Örnek Mouse Pad",
+        "asin": "B000000002",
+        "url": "https://www.amazon.com.tr/dp/B000000002",
+        "image": "https://example.com/urun.jpg",
+        "seller": "Amazon.com.tr",
+        "quantity": 2,
+        "unitPrice": 265.0,
+        "lineTotal": 530.0,
+        "status": "-",
+        "statusText": "-"
+      }
+    ]
+  },
+  {
+    "orderNo": "404-0000000-0000002",
+    "date": "2026-06-11",
+    "dateText": "11 Haziran 2026",
+    "total": "-",
+    "amounts": {},
+    "check": {
+      "itemsSum": 399.0,
+      "subTotal": 0,
+      "totalMinusShipping": 0,
+      "match": false
+    },
+    "address": {
+      "name": "-",
+      "street": "-",
+      "city": "-",
+      "neighborhood": "-",
+      "district": "-",
+      "postalCode": "-",
+      "country": "-",
+      "raw": "-"
+    },
+    "payment": {
+      "method": "-",
+      "last4": "-",
+      "extra": "-",
+      "text": "-"
+    },
+    "items": [
+      {
+        "name": "Örnek Su Matarası",
+        "asin": "B000000003",
+        "url": "https://www.amazon.com.tr/dp/B000000003",
+        "image": "https://example.com/urun.jpg",
+        "seller": "Örnek Satıcı",
+        "quantity": 1,
+        "unitPrice": 399.0,
+        "lineTotal": 399.0,
+        "status": "İptal edildi",
+        "statusText": "İptal edildi"
+      }
+    ]
+  }
+]

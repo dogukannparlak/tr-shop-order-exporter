@@ -1,0 +1,103 @@
+[
+  {
+    "orderNo": "900000001",
+    "date": "2026-09-25 21:15",
+    "status": "Teslim edildi",
+    "total": 398,
+    "address": {
+      "fullName": "Örnek Kişi",
+      "address": "Örnek Mah. Deneme Sk. No:1 D:2",
+      "neighborhood": "Örnek Mah.",
+      "district": "Merkez",
+      "city": "İstanbul",
+      "phone": "050*****00"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "000000******0000",
+      "cardType": "MASTERCARD",
+      "bank": "Örnek Bank",
+      "subTotal": 398,
+      "cargo": 59.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 398
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 59.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Örnek A4 Fotokopi Kağıdı 500'lü",
+        "quantity": 2,
+        "unitPrice": 199,
+        "lineTotal": 398,
+        "productId": 100000001,
+        "url": "https://www.trendyol.com/ornek-marka/ornek-urun-p-100000001",
+        "image": "https://example.com/urun.jpg",
+        "seller": "Örnek Satıcı",
+        "variant": "Tek Ebat",
+        "category": "Fotokopi & Baskı Kağıtları",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000000000000001",
+        "deliveredAt": "2026-09-28 11:25",
+        "deliveredTo": "Örnek Kişi"
+      }
+    ]
+  },
+  {
+    "orderNo": "900000002",
+    "date": "2026-08-10 09:02",
+    "status": "İade edildi",
+    "total": 749,
+    "address": {
+      "fullName": "Örnek Kişi",
+      "address": "Örnek Mah. Deneme Sk. No:1 D:2",
+      "neighborhood": "Örnek Mah.",
+      "district": "Merkez",
+      "city": "İstanbul",
+      "phone": "050*****00"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "000000******0000",
+      "cardType": "MASTERCARD",
+      "bank": "Örnek Bank",
+      "subTotal": 749,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 749
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Örnek Masa Lambası",
+        "quantity": 1,
+        "unitPrice": 749,
+        "lineTotal": 749,
+        "productId": 100000002,
+        "url": "https://www.trendyol.com/ornek-marka/ornek-urun-p-100000002",
+        "image": "https://example.com/urun.jpg",
+        "seller": "Örnek Satıcı",
+        "variant": "Tek Ebat",
+        "category": "Aydınlatma",
+        "status": "İade edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000000000000001",
+        "deliveredAt": "2026-09-28 11:25",
+        "deliveredTo": "Örnek Kişi"
+      }
+    ]
+  }
+]

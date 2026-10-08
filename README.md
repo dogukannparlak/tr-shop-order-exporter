@@ -66,6 +66,24 @@ Hepsiburada, Trendyol ve Milla scraper'ları aynı sekmede ikinci kez çalışt�
   - `check.match: false` çıkan siparişlerde toplam promosyon, vade farkı veya hediye kartı yüzünden tutmayabilir; hata olmak zorunda değil.
   - Captcha çıkarsa kod durur ve o ana kadarkini indirir.
 
+## Örnek dosyalar
+
+`examples/` altında her site için **uydurma** veriyle örnek çıktı var (`*-siparisler.example.json`). Gerçek dosyalarla aynı alan yapısında; adres, telefon ve kart alanları sahte. Gerçek `*-siparisler.json` dosyaları `.gitignore`'da, repoya girmez.
+
+## Analiz
+
+```bash
+python3 analiz.py            # gerçek JSON'lar → satin-alinanlar.csv, ozet.md, trendyol-milla/milla-ozet.md
+python3 analiz.py --ornek    # examples/*.example.json → examples/ altına aynı çıktılar
+```
+
+Tüm siteleri tek tabloda birleştirir (site, tarih, sipariş no, ürün, adet, fiyat, satıcı, kategori, durum). İptal/iade/teslim edilemeyen satırlar `satin_alindi = hayır` olur ve toplama girmez. Adres, telefon ve kart bilgisi çıktıya alınmaz. Gerçek veriden üretilen çıktılar `.gitignore`'da.
+
+## Obsidian notları (isteğe bağlı)
+
+- `vault-not-uretici.py`: mağaza notunu özet, ürün tablosu ve akordeonlarla yeniden üretir. Tutarları alış gününün USD/TRY kuruyla dolara çevirir (`kurlar-usd-try.json`, ECB kurları, 2018-12-31 → 2026-10-06). Kullanım dosyanın başında.
+- `ana-sayfa-ozet.py`: mağaza notlarındaki tablolardan ana sayfaya özet yazar. Klasör `SATIN_ALDIKLARIM_DIR`, Toplam kutusuna eklenecek not `OZET_NOT` ortam değişkeninden okunur.
+
 ## Güvenlik ve sınırlar
 
 - Yalnızca okuma (GET) isteği atılır; istekler arasında bekleme vardır (Amazon'da daha uzun). Captcha, 403 veya "çok fazla istek" görürsen sayfayı yenile ve bir süre bekle.
