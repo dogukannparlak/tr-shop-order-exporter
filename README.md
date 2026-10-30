@@ -29,6 +29,10 @@ Resmî API yok. Scraper'lar sitenin kendi sayfa/API isteklerini **okur**; sipari
 
 Scraper'ı yapıştırınca sayfada **Hangi siparişler indirilsin?** kutusu çıkar: Tümü, son 1 / 3 / 6 ay, son 1 yıl, tarih aralığı ya da son N sipariş. Seçince altında ne indirileceği yazar; **İndirmeyi başlat**'a bas.
 
+![Seçim kutusu: her site kendi renginde](docs/images/scraper-secim-kutusu.png)
+
+*Kutu her sitede kendi renk temasıyla çıkar (Trendyol, Hepsiburada, Milla, Amazon, Temu).*
+
 Kutuyu atlamak için scraper'dan önce Console'a `window.RANGE = { months: 3, from: null, to: null, last: null }` yaz (`from` / `to`: `'YYYY-AA-GG'`).
 
 Liste en yeniden eskiye gittiği için tarih alt sınırında tarama durur. `to` ile eski bir aralık isterken aradaki yeni siparişler de taranır (atlanır), bu yüzden biraz daha yavaş olabilir. Temu'da iade listesi yine tam okunur. Kutu yalnız Console'da çalışan scraper'a aittir; `index.html` paneli siteye bağlanamaz.
