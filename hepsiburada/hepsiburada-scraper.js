@@ -6,6 +6,15 @@ const clean = el => el?.textContent.replace(/\s+/g, ' ').trim() || '-';
 const parseTR = s => { const n = parseFloat(String(s).replace(/[^\d,]/g, '').replace(',', '.')); return isNaN(n) ? null : n; };
 const fmtTR = n => n == null ? '-' : n.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' TL';
 
+
+// ---- AYAR: hangi siparişler alınsın? (hepsi null = tüm siparişler) ----
+// months: son N ay (1, 3, 6, 12…) · from / to: özel aralık, 'YYYY-AA-GG' · last: en yeni N sipariş
+const RANGE = { months: null, from: null, to: null, last: null };
+const rangeFrom = RANGE.from || (RANGE.months ? (d => (d.setMonth(d.getMonth() - RANGE.months), d.toLocaleDateString('sv-SE')))(new Date()) : null);
+const rangeTo = RANGE.to || null;
+// 'YYYY-AA-GG…' -> -1: aralıktan eski, 1: aralıktan yeni, 0: içinde (tarihi okunamayan da 0)
+const rangePos = date => { const d = String(date).slice(0, 10); return !/^\d{4}-/.test(d) ? 0 : rangeFrom && d < rangeFrom ? -1 : rangeTo && d > rangeTo ? 1 : 0; };
+
 // İlerleme kutusu
 document.getElementById('hb-progress')?.remove();
 const box = document.createElement('div');
@@ -23,6 +32,15 @@ function download() {
   a.download = 'hepsiburada-siparisler.json';
   a.click();
 }
+
+// "21 Ağustos 2026" -> "2026-08-21"
+const MONTHS = ['ocak', 'şubat', 'mart', 'nisan', 'mayıs', 'haziran', 'temmuz', 'ağustos', 'eylül', 'ekim', 'kasım', 'aralık'];
+const rowDate = r => {
+  const m = clean(r.querySelector('.order-row__summary__price-and-date span')).toLocaleLowerCase('tr').match(/(\d{1,2})\s+(\S+)\s+(\d{4})/);
+  const mo = m ? MONTHS.indexOf(m[2]) + 1 : 0;
+  return mo ? `${m[3]}-${String(mo).padStart(2, '0')}-${m[1].padStart(2, '0')}` : '-';
+};
+const allRows = () => [...document.querySelectorAll('.order-row')];
 
 function readItem(c) {
   const a = c.querySelector('.product-card__content__title a');
@@ -95,16 +113,18 @@ function readCampaigns(r) {
 
 try {
   // 1) Hepsini yükle
+  // (liste yeniden eskiye sıralı: yeterince sipariş ya da aralıktan eski sipariş gelince yüklemeyi bırak)
   let last = -1;
-  while (document.querySelectorAll('.order-row').length !== last) {
-    last = document.querySelectorAll('.order-row').length;
+  while (allRows().length !== last) {
+    last = allRows().length;
+    if ((RANGE.last && last >= RANGE.last) || (last && rangePos(rowDate(allRows()[last - 1])) < 0)) break;
     say(`Yükleniyor… ${last} sipariş`);
     window.scrollTo(0, document.body.scrollHeight);
     await sleep(1500);
   }
 
   // 2) Her satırı aç ve oku
-  const rows = [...document.querySelectorAll('.order-row')];
+  const rows = allRows().filter(r => rangePos(rowDate(r)) === 0).slice(0, RANGE.last || undefined);
   for (const [i, r] of rows.entries()) {
     const orderNo = clean(r.querySelector('.order-number b')).replace(/\s/g, '');
     try {

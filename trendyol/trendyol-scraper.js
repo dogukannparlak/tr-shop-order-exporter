@@ -101,6 +101,14 @@ function buildOrder(props, urlMap) {
   };
 }
 
+// ---- AYAR: hangi siparişler alınsın? (hepsi null = tüm siparişler) ----
+// months: son N ay (1, 3, 6, 12…) · from / to: özel aralık, 'YYYY-AA-GG' · last: en yeni N sipariş
+const RANGE = { months: null, from: null, to: null, last: null };
+const rangeFrom = RANGE.from || (RANGE.months ? (d => (d.setMonth(d.getMonth() - RANGE.months), d.toLocaleDateString('sv-SE')))(new Date()) : null);
+const rangeTo = RANGE.to || null;
+// 'YYYY-AA-GG…' -> -1: aralıktan eski, 1: aralıktan yeni, 0: içinde (tarihi okunamayan da 0)
+const rangePos = date => { const d = String(date).slice(0, 10); return !/^\d{4}-/.test(d) ? 0 : rangeFrom && d < rangeFrom ? -1 : rangeTo && d > rangeTo ? 1 : 0; };
+
 const GW = 'https://apigw.trendyol.com/discovery-sfint-order-service';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -133,12 +141,15 @@ try {
     if (!Array.isArray(list) || !list.length) break;
     list.forEach(o => ids.push(o.id));
     addToUrlMap(urlMap, list);
+    if (RANGE.last && ids.length >= RANGE.last) break;
     say(`Liste okunuyor… sayfa ${page}, toplam ${ids.length} sipariş`);
     if (list.length < 20) break;
     await sleep(400);
   }
 
-  // 2) Her sipariş için detay
+  if (RANGE.last) ids.length = Math.min(ids.length, RANGE.last);
+
+  // 2) Her sipariş için detay (liste yeniden eskiye sıralı: aralıktan eskiye inince dur)
   for (const [i, id] of ids.entries()) {
     try {
       let props;
@@ -154,7 +165,10 @@ try {
           await sleep(1500);
         }
       }
-      data.push(buildOrder(props, urlMap));
+      const order = buildOrder(props, urlMap);
+      const pos = rangePos(order.date);
+      if (pos < 0) break;
+      if (pos === 0) data.push(order);
     } catch (e) {
       errors.push({ orderNo: id, error: String(e) });
       data.push({ orderNo: id, date: '-', status: '-', total: '-', items: [], error: String(e) });

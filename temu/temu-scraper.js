@@ -124,6 +124,14 @@ function buildOrder(listOrder, store, refunds) {
   };
 }
 
+// ---- AYAR: hangi siparişler alınsın? (hepsi null = tüm siparişler) ----
+// months: son N ay (1, 3, 6, 12…) · from / to: özel aralık, 'YYYY-AA-GG' · last: en yeni N sipariş
+const RANGE = { months: null, from: null, to: null, last: null };
+const rangeFrom = RANGE.from || (RANGE.months ? (d => (d.setMonth(d.getMonth() - RANGE.months), d.toLocaleDateString('sv-SE')))(new Date()) : null);
+const rangeTo = RANGE.to || null;
+// 'YYYY-AA-GG…' -> -1: aralıktan eski, 1: aralıktan yeni, 0: içinde (tarihi okunamayan da 0)
+const rangePos = date => { const d = String(date).slice(0, 10); return !/^\d{4}-/.test(d) ? 0 : rangeFrom && d < rangeFrom ? -1 : rangeTo && d > rangeTo ? 1 : 0; };
+
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 // İlerleme kutusu
@@ -147,7 +155,7 @@ function download() {
 try {
   // 1) Liste API'si: offset_map bir önceki cevaptan gelir, has_next_page false olunca biter
   const orders = [];
-  let offsetMap = {};
+  let offsetMap = {}, done = false;
   for (let page = 1; page <= 200; page++) {
     const body = {
       need_has_next_page: true, page_sn: 10054, page, size: 10, type: 'all', offset: null,
@@ -160,9 +168,13 @@ try {
     if (!r.ok) throw new Error(`liste sayfa ${page}: HTTP ${r.status}`);
     const j = await r.json();
     const list = j.view_orders || [];
-    orders.push(...list.filter(o => o.parent_order_sn));
+    for (const o of list.filter(o => o.parent_order_sn)) {   // liste yeniden eskiye sıralı
+      const pos = rangePos(dt(o.parent_order_time));
+      if (pos < 0 || (RANGE.last && orders.length >= RANGE.last)) { done = true; break; }
+      if (pos === 0) orders.push(o);
+    }
     say(`Liste okunuyor… sayfa ${page}, toplam ${orders.length} sipariş`);
-    if (!j.has_next_page || !list.length) break;
+    if (done || !j.has_next_page || !list.length) break;
     offsetMap = j.offset_map || {};
     await sleep(600);
   }

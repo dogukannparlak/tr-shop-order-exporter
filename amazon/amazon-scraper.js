@@ -124,6 +124,14 @@ function readOrder(doc) {
 }
 
 // ---- ÇALIŞTIR ----
+// ---- AYAR: hangi siparişler alınsın? (hepsi null = tüm siparişler) ----
+// months: son N ay (1, 3, 6, 12…) · from / to: özel aralık, 'YYYY-AA-GG' · last: en yeni N sipariş
+const RANGE = { months: null, from: null, to: null, last: null };
+const rangeFrom = RANGE.from || (RANGE.months ? (d => (d.setMonth(d.getMonth() - RANGE.months), d.toLocaleDateString('sv-SE')))(new Date()) : null);
+const rangeTo = RANGE.to || null;
+// 'YYYY-AA-GG…' -> -1: aralıktan eski, 1: aralıktan yeni, 0: içinde (tarihi okunamayan da 0)
+const rangePos = date => { const d = String(date).slice(0, 10); return !/^\d{4}-/.test(d) ? 0 : rangeFrom && d < rangeFrom ? -1 : rangeTo && d > rangeTo ? 1 : 0; };
+
 // AUTO = true (varsayılan): yılları ve sayfaları kendisi gezer. AUTO = false: sadece AÇIK sayfadaki siparişleri alır.
 const AUTO = true;
 const parseHtml = html => new DOMParser().parseFromString(html, 'text/html');
@@ -164,9 +172,10 @@ try {
   //    AUTO = false: sadece AÇIK sayfadaki siparişleri alır; yılı/sayfayı sen değiştirip tekrar çalıştırırsın.
   const ids = new Map();
   if (!AUTO) idsFrom(document).forEach(id => ids.set(id, 0));
-  const thisYear = new Date().getFullYear();
+  const thisYear = Math.min(new Date().getFullYear(), rangeTo ? +rangeTo.slice(0, 4) : 9999);
+  const firstYear = rangeFrom ? +rangeFrom.slice(0, 4) : 2010;
   let emptyStreak = 0;
-  for (let year = thisYear; AUTO && year >= 2010 && emptyStreak < 3 && !stopped && !listFailed; year--) {
+  for (let year = thisYear; AUTO && year >= firstYear && emptyStreak < 3 && !(RANGE.last && ids.size >= RANGE.last) && !stopped && !listFailed; year--) {
     let yearCount = 0;
     for (let page = 0; page < 100; page++) {
       let html;
@@ -184,13 +193,14 @@ try {
       fresh.forEach(id => ids.set(id, year));
       yearCount += fresh.length;
       say(`Liste: ${year} sayfa ${page}, toplam ${ids.size} sipariş`);
+      if (RANGE.last && ids.size >= RANGE.last) break;
       await sleep(1500);
     }
     emptyStreak = yearCount ? 0 : emptyStreak + 1;
   }
 
   // 2) Her sipariş için detay sayfası
-  const list = [...ids.keys()];
+  const list = [...ids.keys()].slice(0, RANGE.last || undefined);
   for (const [i, id] of list.entries()) {
     if (stopped) break;
     try {
@@ -212,7 +222,9 @@ try {
           await sleep(3000);
         }
       }
-      data.push(order);
+      const pos = rangePos(order.date);
+      if (pos < 0) break;   // yıl/sayfa sırası yeniden eskiye
+      if (pos === 0) data.push(order);
     } catch (e) {
       errors.push({ orderNo: id, error: String(e) });
       data.push({ orderNo: id, date: '-', total: '-', items: [], error: String(e) });

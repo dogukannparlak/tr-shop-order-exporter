@@ -24,6 +24,17 @@ Resmî API yok. Scraper'lar sitenin kendi sayfa/API isteklerini **okur**; sipari
 | Amazon TR | `amazon/amazon-scraper.js` | amazon.com.tr → Siparişlerim | `[AMZ]` | `amazon-siparisler.json` |
 | Temu | `temu/temu-scraper.js` | temu.com/tr/bgt_orders.html | `[TEMU]` | `temu-siparisler.json` |
 
+### Tarih aralığı / son N sipariş
+
+Her scraper'ın başında `RANGE` ayarı var; yapıştırmadan önce düzenle. Hepsi `null` ise tüm siparişler alınır.
+
+```js
+const RANGE = { months: 3, from: null, to: null, last: null };   // son 3 ay
+// months: 1 | 3 | 6 | 12… son N ay · from / to: 'YYYY-AA-GG' özel aralık · last: en yeni N sipariş
+```
+
+Örnekler: `{ months: 6 }`, `{ from: '2026-01-01', to: '2026-03-31' }`, `{ last: 20 }`. Liste en yeniden eskiye gittiği için tarih alt sınırında tarama durur. `to` ile eski bir aralık isterken aradaki yeni siparişler de taranır (atlanır), bu yüzden biraz daha yavaş olabilir. Temu'da iade listesi yine tam okunur.
+
 Aynı sekmede ikinci kez çalıştırmadan önce `F5` yap. Hepsiburada ve Trendyol kodları fonksiyona sarılı değil, tekrar yapıştırınca çakışır.
 
 ## Çıktı
