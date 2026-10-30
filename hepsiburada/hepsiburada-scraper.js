@@ -9,39 +9,54 @@ const fmtTR = n => n == null ? '-' : n.toLocaleString('tr-TR', { minimumFraction
 
 // ---- AYAR: hangi siparişler alınsın? Sayfada çıkan kutudan seçilir ----
 // Kutuyu atlamak için yapıştırmadan önce window.RANGE = { months, from, to, last } tanımla (hepsi null = tüm siparişler).
-const askRange = () => window.RANGE ? Promise.resolve(window.RANGE) : new Promise(resolve => {
+const askRange = site => window.RANGE ? Promise.resolve(window.RANGE) : new Promise(resolve => {
   document.getElementById('range-panel')?.remove();
   const p = document.createElement('div');
   p.id = 'range-panel';
-  p.style.cssText = 'position:fixed;left:50%;top:18%;transform:translateX(-50%);z-index:999999;background:#222;color:#fff;padding:16px 18px;border-radius:10px;font:14px/1.6 system-ui,sans-serif;width:290px;box-shadow:0 8px 30px #0008';
-  const fld = 'width:100%;box-sizing:border-box;margin:4px 0 8px;padding:6px;font:inherit';
-  p.innerHTML = `<b>Hangi siparişler alınsın?</b>
-    <select id="rp-mode" style="${fld}">
-      <option value="all">Tümü</option><option value="1">Son 1 ay</option><option value="3">Son 3 ay</option>
-      <option value="6">Son 6 ay</option><option value="12">Son 1 yıl</option>
-      <option value="custom">Özel tarih aralığı</option><option value="last">Son N sipariş</option>
-    </select>
-    <div id="rp-custom" style="display:none">Başlangıç<input id="rp-from" type="date" style="${fld}">Bitiş<input id="rp-to" type="date" style="${fld}"></div>
-    <div id="rp-last" style="display:none">Sipariş sayısı<input id="rp-n" type="number" min="1" value="20" style="${fld}"></div>
-    <button id="rp-go" style="width:100%;padding:8px;font:inherit;cursor:pointer">Başlat</button>`;
+  p.style.cssText = 'position:fixed;left:50%;top:15%;transform:translateX(-50%);z-index:999999;background:#fff;color:#222;padding:20px 22px;border-radius:12px;font:14px/1.5 system-ui,sans-serif;width:340px;box-shadow:0 10px 40px #0006';
+  const chip = 'padding:8px 4px;border:1px solid #bbb;border-radius:8px;background:#f5f5f5;color:#222;font:inherit;cursor:pointer';
+  const fld = 'width:100%;box-sizing:border-box;margin:2px 0 10px;padding:7px;font:inherit;border:1px solid #bbb;border-radius:6px';
+  const MODES = [['all', 'Tümü'], ['1', 'Son 1 ay'], ['3', 'Son 3 ay'], ['6', 'Son 6 ay'], ['12', 'Son 1 yıl'], ['custom', 'Tarih aralığı'], ['last', 'Son N sipariş']];
+  p.innerHTML = `<div style="font-size:16px;font-weight:600">${site}: hangi siparişler indirilsin?</div>
+    <div style="color:#666;margin:2px 0 12px">Bir seçenek seç, sonra <b>İndirmeyi başlat</b>'a bas.</div>
+    <div id="rp-chips" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:12px">${MODES.map(([v, t]) => `<button type="button" data-m="${v}" style="${chip}">${t}</button>`).join('')}</div>
+    <div id="rp-custom" style="display:none">Başlangıç tarihi<input id="rp-from" type="date" style="${fld}">Bitiş tarihi (boşsa bugün)<input id="rp-to" type="date" style="${fld}"></div>
+    <div id="rp-last" style="display:none">Kaç sipariş? (en yeniden başlayarak)<input id="rp-n" type="number" min="1" value="20" style="${fld}"></div>
+    <div id="rp-sum" style="background:#eef4ff;border-radius:6px;padding:8px 10px;margin-bottom:12px"></div>
+    <button id="rp-go" type="button" style="width:100%;padding:10px;font:inherit;font-weight:600;cursor:pointer;border:0;border-radius:8px;background:#f27a1a;color:#fff">İndirmeyi başlat</button>`;
   document.body.appendChild(p);
   const $ = id => p.querySelector('#' + id);
-  $('rp-mode').onchange = () => {
-    $('rp-custom').style.display = $('rp-mode').value === 'custom' ? '' : 'none';
-    $('rp-last').style.display = $('rp-mode').value === 'last' ? '' : 'none';
+  const fmt = d => d.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
+  let mode = 'all';
+  const refresh = () => {
+    p.querySelectorAll('[data-m]').forEach(b => {
+      const on = b.dataset.m === mode;
+      b.style.background = on ? '#f27a1a' : '#f5f5f5'; b.style.color = on ? '#fff' : '#222'; b.style.borderColor = on ? '#f27a1a' : '#bbb';
+    });
+    $('rp-custom').style.display = mode === 'custom' ? '' : 'none';
+    $('rp-last').style.display = mode === 'last' ? '' : 'none';
+    const f = $('rp-from').value, t = $('rp-to').value, n = +$('rp-n').value;
+    $('rp-sum').textContent = mode === 'all' ? 'Hesaptaki tüm siparişler indirilecek.'
+      : /^\d+$/.test(mode) ? `${fmt((d => (d.setMonth(d.getMonth() - +mode), d))(new Date()))} – bugün arası siparişler indirilecek.`
+      : mode === 'last' ? `En yeni ${n > 0 ? n : '?'} sipariş indirilecek.`
+      : !f ? 'Başlangıç tarihini seç.' : `${fmt(new Date(f))} – ${t ? fmt(new Date(t)) : 'bugün'} arası siparişler indirilecek.`;
   };
+  p.addEventListener('click', e => { const b = e.target.closest('[data-m]'); if (b) { mode = b.dataset.m; refresh(); } });
+  p.addEventListener('input', refresh);
+  refresh();
   $('rp-go').onclick = () => {
-    const m = $('rp-mode').value;
+    if (mode === 'custom' && !$('rp-from').value) return $('rp-from').focus();
+    if (mode === 'last' && !(+$('rp-n').value > 0)) return $('rp-n').focus();
     p.remove();
     resolve({
-      months: /^\d+$/.test(m) ? +m : null,
-      from: m === 'custom' ? $('rp-from').value || null : null,
-      to: m === 'custom' ? $('rp-to').value || null : null,
-      last: m === 'last' ? +$('rp-n').value || null : null,
+      months: /^\d+$/.test(mode) ? +mode : null,
+      from: mode === 'custom' ? $('rp-from').value || null : null,
+      to: mode === 'custom' ? $('rp-to').value || null : null,
+      last: mode === 'last' ? +$('rp-n').value : null,
     });
   };
 });
-const RANGE = await askRange();
+const RANGE = await askRange('Hepsiburada');
 const rangeFrom = RANGE.from || (RANGE.months ? (d => (d.setMonth(d.getMonth() - RANGE.months), d.toLocaleDateString('sv-SE')))(new Date()) : null);
 const rangeTo = RANGE.to || null;
 // 'YYYY-AA-GG…' -> -1: aralıktan eski, 1: aralıktan yeni, 0: içinde (tarihi okunamayan da 0)

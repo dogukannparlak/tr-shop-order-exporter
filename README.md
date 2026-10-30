@@ -26,7 +26,7 @@ Resmî API yok. Scraper'lar sitenin kendi sayfa/API isteklerini **okur**; sipari
 
 ### Tarih aralığı / son N sipariş
 
-Scraper'ı yapıştırınca sayfada **Hangi siparişler alınsın?** kutusu çıkar: Tümü, son 1 / 3 / 6 ay, son 1 yıl, özel tarih aralığı ya da son N sipariş. Seçip **Başlat**'a bas.
+Scraper'ı yapıştırınca sayfada **Hangi siparişler indirilsin?** kutusu çıkar: Tümü, son 1 / 3 / 6 ay, son 1 yıl, tarih aralığı ya da son N sipariş. Seçince altında ne indirileceği yazar; **İndirmeyi başlat**'a bas.
 
 Kutuyu atlamak için scraper'dan önce Console'a `window.RANGE = { months: 3, from: null, to: null, last: null }` yaz (`from` / `to`: `'YYYY-AA-GG'`).
 
