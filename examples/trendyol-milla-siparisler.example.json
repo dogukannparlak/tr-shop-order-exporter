@@ -1,49 +1,582 @@
 [
   {
-    "orderNo": "800000001",
-    "date": "2026-07-03 14:40",
+    "orderNo": "800131677",
+    "date": "2026-04-02 13:12",
     "status": "Teslim edildi",
-    "total": 599.98,
+    "total": 1288.99,
     "address": {
-      "fullName": "Örnek Kişi",
-      "address": "Örnek Mah. Deneme Sk. No:1 D:2",
-      "neighborhood": "Örnek Mah.",
-      "district": "Merkez",
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:36 D:5",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
       "city": "İstanbul",
-      "phone": "050*****00"
+      "phone": "0552*****16"
     },
     "payment": {
       "type": "PAY_WITH_CARD",
       "method": "Tek çekim",
-      "card": "000000******0000",
+      "card": "510000******2222",
       "cardType": "MASTERCARD",
-      "bank": "Örnek Bank",
-      "subTotal": 599.98,
+      "bank": "Akbank",
+      "subTotal": 1288.99,
       "cargo": 0.0,
       "bonus": 0.0,
       "serviceFee": 0,
       "installmentFee": 0,
       "additionalFee": 0,
-      "total": 599.98
+      "total": 1288.99
     },
-    "discounts": [],
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 54.99
+      }
+    ],
     "items": [
       {
-        "name": "Örnek Basic Tişört",
+        "name": "Günlük Spor Ayakkabı",
+        "quantity": 1,
+        "unitPrice": 1288.99,
+        "lineTotal": 1288.99,
+        "productId": 344258191,
+        "url": "https://www.trendyol-milla.com/adım-ayakkabı/urun-p-487493096",
+        "image": "examples/img/ayakkabi.svg",
+        "seller": "Adım Ayakkabı",
+        "variant": "Beyaz , 39",
+        "category": "Spor Ayakkabı",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000014183131325",
+        "deliveredAt": "2026-04-05 13:12",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "800139596",
+    "date": "2025-12-31 11:55",
+    "status": "Teslim edildi",
+    "total": 1105.97,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:39 D:10",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0555*****79"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "510000******2222",
+      "cardType": "MASTERCARD",
+      "bank": "Akbank",
+      "subTotal": 1105.97,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 1105.97
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 48.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Nemlendirici Yüz Kremi 50 ml",
+        "quantity": 1,
+        "unitPrice": 317.99,
+        "lineTotal": 317.99,
+        "productId": 371096600,
+        "url": "https://www.trendyol-milla.com/güzellik-kutusu/urun-p-612957813",
+        "image": "examples/img/kozmetik.svg",
+        "seller": "Güzellik Kutusu",
+        "variant": "Tek Ebat",
+        "category": "Yüz Kremi",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000072250436572",
+        "deliveredAt": "2026-01-01 11:55",
+        "deliveredTo": "Elif Yılmaz"
+      },
+      {
+        "name": "Midi Boy Saten Etek",
         "quantity": 2,
-        "unitPrice": 299.99,
-        "lineTotal": 599.98,
-        "productId": 200000001,
-        "url": "https://www.trendyol-milla.com/ornek-marka/ornek-urun-p-200000001",
-        "image": "https://example.com/urun.jpg",
-        "seller": "Örnek Satıcı",
+        "unitPrice": 393.99,
+        "lineTotal": 787.98,
+        "productId": 262915636,
+        "url": "https://www.trendyol-milla.com/butik-line/urun-p-260199682",
+        "image": "examples/img/giyim.svg",
+        "seller": "Butik Line",
+        "variant": "Zümrüt , 36",
+        "category": "Etek",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000334788945402",
+        "deliveredAt": "2026-01-01 11:55",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "800171272",
+    "date": "2025-11-18 19:26",
+    "status": "Teslim edildi",
+    "total": 444.99,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:8 D:13",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0542*****65"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "540000******4444",
+      "cardType": "MASTERCARD",
+      "bank": "QNB Finansbank",
+      "subTotal": 444.99,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 444.99
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 45.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Triko Kazak",
+        "quantity": 1,
+        "unitPrice": 444.99,
+        "lineTotal": 444.99,
+        "productId": 409471503,
+        "url": "https://www.trendyol-milla.com/moda-sokağı/urun-p-811443654",
+        "image": "examples/img/giyim.svg",
+        "seller": "Moda Sokağı",
+        "variant": "Bej , S",
+        "category": "Kazak",
+        "status": "Teslim edildi",
+        "cargoCompany": "Aras Kargo",
+        "trackingNumber": "7000836717894940",
+        "deliveredAt": "2025-11-22 19:26",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "800163353",
+    "date": "2025-11-15 17:44",
+    "status": "Teslim edildi",
+    "total": 603.98,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:41 D:14",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0545*****11"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 603.98,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 603.98
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 46.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Nemlendirici Yüz Kremi 50 ml",
+        "quantity": 1,
+        "unitPrice": 338.99,
+        "lineTotal": 338.99,
+        "productId": 748232591,
+        "url": "https://www.trendyol-milla.com/güzellik-kutusu/urun-p-368830491",
+        "image": "examples/img/kozmetik.svg",
+        "seller": "Güzellik Kutusu",
+        "variant": "Tek Ebat",
+        "category": "Yüz Kremi",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000249500349165",
+        "deliveredAt": "2025-11-18 17:44",
+        "deliveredTo": "Mehmet Yılmaz"
+      },
+      {
+        "name": "Basic Oversize Pamuklu Tişört",
+        "quantity": 1,
+        "unitPrice": 264.99,
+        "lineTotal": 264.99,
+        "productId": 718740490,
+        "url": "https://www.trendyol-milla.com/moda-sokağı/urun-p-143198431",
+        "image": "examples/img/giyim.svg",
+        "seller": "Moda Sokağı",
         "variant": "Siyah , M",
         "category": "Tişört",
         "status": "Teslim edildi",
         "cargoCompany": "TRENDYOL EXPRESS",
-        "trackingNumber": "7000000000000001",
-        "deliveredAt": "2026-09-28 11:25",
-        "deliveredTo": "Örnek Kişi"
+        "trackingNumber": "7000568956468715",
+        "deliveredAt": "2025-11-18 17:44",
+        "deliveredTo": "Mehmet Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "800107920",
+    "date": "2025-10-28 12:27",
+    "status": "Teslim edildi",
+    "total": 619.98,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:22 D:1",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0545*****41"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "540000******4444",
+      "cardType": "MASTERCARD",
+      "bank": "QNB Finansbank",
+      "subTotal": 619.98,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 619.98
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 48.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Nemlendirici Yüz Kremi 50 ml",
+        "quantity": 2,
+        "unitPrice": 309.99,
+        "lineTotal": 619.98,
+        "productId": 446071904,
+        "url": "https://www.trendyol-milla.com/güzellik-kutusu/urun-p-363598427",
+        "image": "examples/img/kozmetik.svg",
+        "seller": "Güzellik Kutusu",
+        "variant": "Tek Ebat",
+        "category": "Yüz Kremi",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000967565629292",
+        "deliveredAt": "2025-10-31 12:27",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "800147515",
+    "date": "2024-07-06 20:28",
+    "status": "Teslim edildi",
+    "total": 833.98,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:46 D:5",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0552*****58"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "540000******4444",
+      "cardType": "MASTERCARD",
+      "bank": "QNB Finansbank",
+      "subTotal": 833.98,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 833.98
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 28.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Günlük Spor Ayakkabı",
+        "quantity": 1,
+        "unitPrice": 651.99,
+        "lineTotal": 651.99,
+        "productId": 918982730,
+        "url": "https://www.trendyol-milla.com/adım-ayakkabı/urun-p-323110563",
+        "image": "examples/img/ayakkabi.svg",
+        "seller": "Adım Ayakkabı",
+        "variant": "Beyaz , 39",
+        "category": "Spor Ayakkabı",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000288669155156",
+        "deliveredAt": "2024-07-07 20:28",
+        "deliveredTo": "Mehmet Yılmaz"
+      },
+      {
+        "name": "Nemlendirici Yüz Kremi 50 ml",
+        "quantity": 1,
+        "unitPrice": 181.99,
+        "lineTotal": 181.99,
+        "productId": 692697161,
+        "url": "https://www.trendyol-milla.com/güzellik-kutusu/urun-p-180600295",
+        "image": "examples/img/kozmetik.svg",
+        "seller": "Güzellik Kutusu",
+        "variant": "Tek Ebat",
+        "category": "Yüz Kremi",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000446688090938",
+        "deliveredAt": "2024-07-08 20:28",
+        "deliveredTo": "Mehmet Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "800100001",
+    "date": "2024-05-11 10:37",
+    "status": "İptal edildi",
+    "total": 317.99,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:32 D:2",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0543*****46"
+    },
+    "payment": {
+      "type": "PAY_WITH_WALLET",
+      "method": "Tek çekim",
+      "card": "-",
+      "cardType": "-",
+      "bank": "-",
+      "subTotal": 317.99,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 317.99
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 25.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Yüksek Bel Mom Jean",
+        "quantity": 1,
+        "unitPrice": 317.99,
+        "lineTotal": 317.99,
+        "productId": 810303128,
+        "url": "https://www.trendyol-milla.com/denim-store/urun-p-497897455",
+        "image": "examples/img/giyim.svg",
+        "seller": "Denim Store",
+        "variant": "Mavi , 38",
+        "category": "Jean",
+        "status": "İptal edildi",
+        "cargoCompany": "-",
+        "trackingNumber": "-",
+        "deliveredAt": "-",
+        "deliveredTo": "-"
+      }
+    ]
+  },
+  {
+    "orderNo": "800115839",
+    "date": "2024-04-07 23:13",
+    "status": "Teslim edildi",
+    "total": 589.99,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:32 D:8",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0555*****02"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "510000******2222",
+      "cardType": "MASTERCARD",
+      "bank": "Akbank",
+      "subTotal": 589.99,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 589.99
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 27.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Günlük Spor Ayakkabı",
+        "quantity": 1,
+        "unitPrice": 589.99,
+        "lineTotal": 589.99,
+        "productId": 191926217,
+        "url": "https://www.trendyol-milla.com/adım-ayakkabı/urun-p-359154084",
+        "image": "examples/img/ayakkabi.svg",
+        "seller": "Adım Ayakkabı",
+        "variant": "Beyaz , 39",
+        "category": "Spor Ayakkabı",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000538616507491",
+        "deliveredAt": "2024-04-09 23:13",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "800123758",
+    "date": "2023-10-08 17:14",
+    "status": "Teslim edildi",
+    "total": 489.98,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:47 D:4",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0540*****15"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 489.98,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 489.98
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 21.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Omuz Çantası",
+        "quantity": 2,
+        "unitPrice": 244.99,
+        "lineTotal": 489.98,
+        "productId": 556881239,
+        "url": "https://www.trendyol-milla.com/çanta-dünyası/urun-p-900942073",
+        "image": "examples/img/aksesuar.svg",
+        "seller": "Çanta Dünyası",
+        "variant": "Taba",
+        "category": "Omuz Çantası",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000387967794459",
+        "deliveredAt": "2023-10-11 17:14",
+        "deliveredTo": "Mehmet Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "800155434",
+    "date": "2023-08-24 15:59",
+    "status": "Teslim edildi",
+    "total": 323.99,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:59 D:5",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0544*****15"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 323.99,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 323.99
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 21.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Çelik Kordon Kadın Saat",
+        "quantity": 1,
+        "unitPrice": 323.99,
+        "lineTotal": 323.99,
+        "productId": 385220694,
+        "url": "https://www.trendyol-milla.com/saat-galerisi/urun-p-987588450",
+        "image": "examples/img/aksesuar.svg",
+        "seller": "Saat Galerisi",
+        "variant": "Gümüş",
+        "category": "Saat",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000064731212366",
+        "deliveredAt": "2023-08-26 15:59",
+        "deliveredTo": "Elif Yılmaz"
       }
     ]
   }

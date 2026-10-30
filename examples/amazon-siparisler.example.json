@@ -1,106 +1,985 @@
 [
   {
-    "orderNo": "404-0000000-0000001",
-    "date": "2026-09-22",
-    "dateText": "22 Eylül 2026",
-    "total": 1530.05,
+    "orderNo": "404-5816353-2287332",
+    "date": "2026-02-05",
+    "dateText": "5 Şubat 2026",
+    "total": 391.8,
     "amounts": {
-      "Ürün Ara Toplamı": 1530.05,
+      "Ürün Ara Toplamı": 391.8,
       "Kargo ve Paketleme": 0,
-      "KDV Öncesi Toplam": 1275.04,
-      "KDV": 255,
-      "Toplam": 1530.05,
-      "Genel Toplam": 1530.05
+      "KDV Öncesi Toplam": 326.5,
+      "KDV": 65.3,
+      "Toplam": 391.8,
+      "Genel Toplam": 391.8
     },
     "check": {
-      "itemsSum": 1530.05,
-      "subTotal": 1530.05,
-      "totalMinusShipping": 1530.05,
+      "itemsSum": 391.8,
+      "subTotal": 391.8,
+      "totalMinusShipping": 391.8,
       "match": true
     },
     "address": {
-      "name": "Örnek Kişi",
-      "street": "Örnek Mah. Deneme Sk. No:1 D:2",
+      "name": "Mehmet Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:42",
       "city": "İstanbul",
-      "neighborhood": "Örnek Mah.",
-      "district": "Merkez",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
       "postalCode": "34000",
       "country": "Türkiye",
-      "raw": "Örnek Kişi, Örnek Mah. Deneme Sk. No:1 D:2, İstanbul 34000, Türkiye"
+      "raw": "Mehmet Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
     },
     "payment": {
-      "method": "Mastercard/EuroCard",
-      "last4": "0000",
+      "method": "Visa",
+      "last4": "1111",
       "extra": "-",
-      "text": "Ödeme aracı Mastercard/EuroCard0000 ile biten"
+      "text": "Ödeme aracı Visa1111 ile biten"
     },
     "items": [
       {
-        "name": "Örnek Mekanik Klavye",
-        "asin": "B000000001",
-        "url": "https://www.amazon.com.tr/dp/B000000001",
-        "image": "https://example.com/urun.jpg",
-        "seller": "Örnek Satıcı",
+        "name": "Sapiens: İnsan Türünün Kısa Bir Tarihi",
+        "asin": "B057236885X",
+        "url": "https://www.amazon.com.tr/dp/B057236885X",
+        "image": "examples/img/kitap.svg",
+        "seller": "Mutfak Sanatı",
         "quantity": 1,
-        "unitPrice": 1000.05,
-        "lineTotal": 1000.05,
-        "status": "Teslim edildi",
-        "statusText": "Teslim edildi: 23 Eylül Paket doğrudan müşteriye teslim edildi."
+        "unitPrice": 279.9,
+        "lineTotal": 279.9,
+        "status": "İade edildi",
+        "statusText": "İade edildi"
       },
       {
-        "name": "Örnek Mouse Pad",
-        "asin": "B000000002",
-        "url": "https://www.amazon.com.tr/dp/B000000002",
-        "image": "https://example.com/urun.jpg",
+        "name": "Temperli Cam Ekran Koruyucu 2'li",
+        "asin": "B070654852X",
+        "url": "https://www.amazon.com.tr/dp/B070654852X",
+        "image": "examples/img/telefon.svg",
         "seller": "Amazon.com.tr",
+        "quantity": 1,
+        "unitPrice": 111.9,
+        "lineTotal": 111.9,
+        "status": "İade edildi",
+        "statusText": "İade edildi"
+      }
+    ]
+  },
+  {
+    "orderNo": "407-8103580-9531021",
+    "date": "2025-11-06",
+    "dateText": "6 Kasım 2025",
+    "total": 4363.7,
+    "amounts": {
+      "Ürün Ara Toplamı": 4363.7,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 3636.42,
+      "KDV": 727.28,
+      "Toplam": 4363.7,
+      "Genel Toplam": 4363.7
+    },
+    "check": {
+      "itemsSum": 4363.7,
+      "subTotal": 4363.7,
+      "totalMinusShipping": 4363.7,
+      "match": true
+    },
+    "address": {
+      "name": "Elif Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:24",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Elif Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Visa",
+      "last4": "1111",
+      "extra": "-",
+      "text": "Ödeme aracı Visa1111 ile biten"
+    },
+    "items": [
+      {
+        "name": "Mekanik Klavye TR Q Kırmızı Switch",
+        "asin": "B051551377X",
+        "url": "https://www.amazon.com.tr/dp/B051551377X",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Mutfak Sanatı",
         "quantity": 2,
-        "unitPrice": 265.0,
-        "lineTotal": 530.0,
+        "unitPrice": 2079.9,
+        "lineTotal": 4159.8,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 8 Kasım"
+      },
+      {
+        "name": "Python ile Programlamaya Giriş",
+        "asin": "B054087376X",
+        "url": "https://www.amazon.com.tr/dp/B054087376X",
+        "image": "examples/img/kitap.svg",
+        "seller": "Amazon.com.tr",
+        "quantity": 1,
+        "unitPrice": 203.9,
+        "lineTotal": 203.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 8 Kasım"
+      }
+    ]
+  },
+  {
+    "orderNo": "407-8342941-1733037",
+    "date": "2025-08-10",
+    "dateText": "10 Ağustos 2025",
+    "total": 171.9,
+    "amounts": {
+      "Ürün Ara Toplamı": 171.9,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 143.25,
+      "KDV": 28.65,
+      "Toplam": 171.9,
+      "Genel Toplam": 171.9
+    },
+    "check": {
+      "itemsSum": 171.9,
+      "subTotal": 171.9,
+      "totalMinusShipping": 171.9,
+      "match": true
+    },
+    "address": {
+      "name": "Elif Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:27",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Elif Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "2222",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard2222 ile biten"
+    },
+    "items": [
+      {
+        "name": "Python ile Programlamaya Giriş",
+        "asin": "B034272734X",
+        "url": "https://www.amazon.com.tr/dp/B034272734X",
+        "image": "examples/img/kitap.svg",
+        "seller": "Mutfak Sanatı",
+        "quantity": 1,
+        "unitPrice": 171.9,
+        "lineTotal": 171.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 12 Ağustos"
+      }
+    ]
+  },
+  {
+    "orderNo": "403-1642620-5813037",
+    "date": "2025-05-25",
+    "dateText": "25 Mayıs 2025",
+    "total": 398.9,
+    "amounts": {
+      "Ürün Ara Toplamı": 398.9,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 332.42,
+      "KDV": 66.48,
+      "Toplam": 398.9,
+      "Genel Toplam": 398.9
+    },
+    "check": {
+      "itemsSum": 398.9,
+      "subTotal": 398.9,
+      "totalMinusShipping": 398.9,
+      "match": true
+    },
+    "address": {
+      "name": "Mehmet Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:59",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Mehmet Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "2222",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard2222 ile biten"
+    },
+    "items": [
+      {
+        "name": "Laptop Standı Alüminyum Ayarlanabilir",
+        "asin": "B023298711X",
+        "url": "https://www.amazon.com.tr/dp/B023298711X",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "TeknoDünya",
+        "quantity": 1,
+        "unitPrice": 398.9,
+        "lineTotal": 398.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 27 Mayıs"
+      }
+    ]
+  },
+  {
+    "orderNo": "402-5833542-4986941",
+    "date": "2025-03-25",
+    "dateText": "25 Mart 2025",
+    "total": 172.9,
+    "amounts": {
+      "Ürün Ara Toplamı": 172.9,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 144.08,
+      "KDV": 28.82,
+      "Toplam": 172.9,
+      "Genel Toplam": 172.9
+    },
+    "check": {
+      "itemsSum": 172.9,
+      "subTotal": 172.9,
+      "totalMinusShipping": 172.9,
+      "match": true
+    },
+    "address": {
+      "name": "Mehmet Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:20",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Mehmet Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "4444",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard4444 ile biten"
+    },
+    "items": [
+      {
+        "name": "1000 Parça Puzzle Kapadokya",
+        "asin": "B038944689X",
+        "url": "https://www.amazon.com.tr/dp/B038944689X",
+        "image": "examples/img/hobi.svg",
+        "seller": "Amazon.com.tr",
+        "quantity": 1,
+        "unitPrice": 172.9,
+        "lineTotal": 172.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 27 Mart"
+      }
+    ]
+  },
+  {
+    "orderNo": "403-8309439-7718433",
+    "date": "2024-12-27",
+    "dateText": "27 Aralık 2024",
+    "total": 1122.7,
+    "amounts": {
+      "Ürün Ara Toplamı": 1122.7,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 935.58,
+      "KDV": 187.12,
+      "Toplam": 1122.7,
+      "Genel Toplam": 1122.7
+    },
+    "check": {
+      "itemsSum": 1122.7,
+      "subTotal": 1122.7,
+      "totalMinusShipping": 1122.7,
+      "match": true
+    },
+    "address": {
+      "name": "Mehmet Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:34",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Mehmet Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Visa",
+      "last4": "1111",
+      "extra": "-",
+      "text": "Ödeme aracı Visa1111 ile biten"
+    },
+    "items": [
+      {
+        "name": "Kablosuz Kulak İçi Bluetooth Kulaklık",
+        "asin": "B092963368X",
+        "url": "https://www.amazon.com.tr/dp/B092963368X",
+        "image": "examples/img/elektronik.svg",
+        "seller": "Kitap Diyarı",
+        "quantity": 1,
+        "unitPrice": 770.9,
+        "lineTotal": 770.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 29 Aralık"
+      },
+      {
+        "name": "Araç İçi Manyetik Telefon Tutucu",
+        "asin": "B021828592X",
+        "url": "https://www.amazon.com.tr/dp/B021828592X",
+        "image": "examples/img/telefon.svg",
+        "seller": "Kitap Diyarı",
+        "quantity": 2,
+        "unitPrice": 175.9,
+        "lineTotal": 351.8,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 29 Aralık"
+      }
+    ]
+  },
+  {
+    "orderNo": "407-9655523-3091745",
+    "date": "2024-12-05",
+    "dateText": "5 Aralık 2024",
+    "total": 587.9,
+    "amounts": {
+      "Ürün Ara Toplamı": 587.9,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 489.92,
+      "KDV": 97.98,
+      "Toplam": 587.9,
+      "Genel Toplam": 587.9
+    },
+    "check": {
+      "itemsSum": 587.9,
+      "subTotal": 587.9,
+      "totalMinusShipping": 587.9,
+      "match": true
+    },
+    "address": {
+      "name": "Elif Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:19",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Elif Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Visa",
+      "last4": "1111",
+      "extra": "-",
+      "text": "Ödeme aracı Visa1111 ile biten"
+    },
+    "items": [
+      {
+        "name": "Lego Classic Yaratıcı Yapım Kutusu",
+        "asin": "B074503785X",
+        "url": "https://www.amazon.com.tr/dp/B074503785X",
+        "image": "examples/img/oyuncak.svg",
+        "seller": "TeknoDünya",
+        "quantity": 1,
+        "unitPrice": 587.9,
+        "lineTotal": 587.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 7 Aralık"
+      }
+    ]
+  },
+  {
+    "orderNo": "407-3522845-6592886",
+    "date": "2024-11-15",
+    "dateText": "15 Kasım 2024",
+    "total": 100.9,
+    "amounts": {
+      "Ürün Ara Toplamı": 100.9,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 84.08,
+      "KDV": 16.82,
+      "Toplam": 100.9,
+      "Genel Toplam": 100.9
+    },
+    "check": {
+      "itemsSum": 100.9,
+      "subTotal": 100.9,
+      "totalMinusShipping": 100.9,
+      "match": true
+    },
+    "address": {
+      "name": "Can Demir",
+      "street": "Kazımdirik Mah. Örnek Sk. No:6",
+      "city": "İzmir",
+      "neighborhood": "Kazımdirik Mah.",
+      "district": "Bornova",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Can Demir, Kazımdirik Mah. Örnek Sk., İzmir 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Visa",
+      "last4": "3333",
+      "extra": "-",
+      "text": "Ödeme aracı Visa3333 ile biten"
+    },
+    "items": [
+      {
+        "name": "USB-C - USB-C Örgülü Kablo 2 m",
+        "asin": "B061883769X",
+        "url": "https://www.amazon.com.tr/dp/B061883769X",
+        "image": "examples/img/elektronik.svg",
+        "seller": "TeknoDünya",
+        "quantity": 1,
+        "unitPrice": 100.9,
+        "lineTotal": 100.9,
+        "status": "İade edildi",
+        "statusText": "İade edildi"
+      }
+    ]
+  },
+  {
+    "orderNo": "404-7406756-9437374",
+    "date": "2024-08-16",
+    "dateText": "16 Ağustos 2024",
+    "total": 542.8,
+    "amounts": {
+      "Ürün Ara Toplamı": 542.8,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 452.33,
+      "KDV": 90.47,
+      "Toplam": 542.8,
+      "Genel Toplam": 542.8
+    },
+    "check": {
+      "itemsSum": 542.8,
+      "subTotal": 542.8,
+      "totalMinusShipping": 542.8,
+      "match": true
+    },
+    "address": {
+      "name": "Can Demir",
+      "street": "Kazımdirik Mah. Örnek Sk. No:34",
+      "city": "İzmir",
+      "neighborhood": "Kazımdirik Mah.",
+      "district": "Bornova",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Can Demir, Kazımdirik Mah. Örnek Sk., İzmir 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "4444",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard4444 ile biten"
+    },
+    "items": [
+      {
+        "name": "Laptop Standı Alüminyum Ayarlanabilir",
+        "asin": "B072950208X",
+        "url": "https://www.amazon.com.tr/dp/B072950208X",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Amazon.com.tr",
+        "quantity": 1,
+        "unitPrice": 298.9,
+        "lineTotal": 298.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 18 Ağustos"
+      },
+      {
+        "name": "Cam Saklama Kabı Seti 5'li",
+        "asin": "B086560394X",
+        "url": "https://www.amazon.com.tr/dp/B086560394X",
+        "image": "examples/img/mutfak.svg",
+        "seller": "Kitap Diyarı",
+        "quantity": 1,
+        "unitPrice": 243.9,
+        "lineTotal": 243.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 18 Ağustos"
+      }
+    ]
+  },
+  {
+    "orderNo": "404-5856117-6504979",
+    "date": "2024-07-07",
+    "dateText": "7 Temmuz 2024",
+    "total": 831.8,
+    "amounts": {
+      "Ürün Ara Toplamı": 831.8,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 693.17,
+      "KDV": 138.63,
+      "Toplam": 831.8,
+      "Genel Toplam": 831.8
+    },
+    "check": {
+      "itemsSum": 831.8,
+      "subTotal": 831.8,
+      "totalMinusShipping": 831.8,
+      "match": true
+    },
+    "address": {
+      "name": "Elif Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:8",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Elif Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "2222",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard2222 ile biten"
+    },
+    "items": [
+      {
+        "name": "Filtre Kahve Makinesi",
+        "asin": "B063051354X",
+        "url": "https://www.amazon.com.tr/dp/B063051354X",
+        "image": "examples/img/mutfak.svg",
+        "seller": "Mutfak Sanatı",
+        "quantity": 1,
+        "unitPrice": 731.9,
+        "lineTotal": 731.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 9 Temmuz"
+      },
+      {
+        "name": "Atomik Alışkanlıklar",
+        "asin": "B050455821X",
+        "url": "https://www.amazon.com.tr/dp/B050455821X",
+        "image": "examples/img/kitap.svg",
+        "seller": "Amazon.com.tr",
+        "quantity": 1,
+        "unitPrice": 99.9,
+        "lineTotal": 99.9,
+        "status": "Teslim edildi",
+        "statusText": "Teslim edildi: 9 Temmuz"
+      }
+    ]
+  },
+  {
+    "orderNo": "402-6919270-5035998",
+    "date": "2023-04-07",
+    "dateText": "7 Nisan 2023",
+    "total": 565.7,
+    "amounts": {
+      "Ürün Ara Toplamı": 565.7,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 471.42,
+      "KDV": 94.28,
+      "Toplam": 565.7,
+      "Genel Toplam": 565.7
+    },
+    "check": {
+      "itemsSum": 565.7,
+      "subTotal": 565.7,
+      "totalMinusShipping": 565.7,
+      "match": true
+    },
+    "address": {
+      "name": "Mehmet Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:37",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Mehmet Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "4444",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard4444 ile biten"
+    },
+    "items": [
+      {
+        "name": "USB-C - USB-C Örgülü Kablo 2 m",
+        "asin": "B012205915X",
+        "url": "https://www.amazon.com.tr/dp/B012205915X",
+        "image": "examples/img/elektronik.svg",
+        "seller": "Mutfak Sanatı",
+        "quantity": 1,
+        "unitPrice": 59.9,
+        "lineTotal": 59.9,
+        "status": "-",
+        "statusText": "-"
+      },
+      {
+        "name": "10.000 mAh Powerbank",
+        "asin": "B029270557X",
+        "url": "https://www.amazon.com.tr/dp/B029270557X",
+        "image": "examples/img/elektronik.svg",
+        "seller": "TeknoDünya",
+        "quantity": 2,
+        "unitPrice": 252.9,
+        "lineTotal": 505.8,
         "status": "-",
         "statusText": "-"
       }
     ]
   },
   {
-    "orderNo": "404-0000000-0000002",
-    "date": "2026-06-11",
-    "dateText": "11 Haziran 2026",
-    "total": "-",
-    "amounts": {},
+    "orderNo": "404-7255418-5746166",
+    "date": "2023-02-28",
+    "dateText": "28 Şubat 2023",
+    "total": 215.9,
+    "amounts": {
+      "Ürün Ara Toplamı": 215.9,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 179.92,
+      "KDV": 35.98,
+      "Toplam": 215.9,
+      "Genel Toplam": 215.9
+    },
     "check": {
-      "itemsSum": 399.0,
-      "subTotal": 0,
-      "totalMinusShipping": 0,
-      "match": false
+      "itemsSum": 215.9,
+      "subTotal": 215.9,
+      "totalMinusShipping": 215.9,
+      "match": true
     },
     "address": {
-      "name": "-",
-      "street": "-",
-      "city": "-",
-      "neighborhood": "-",
-      "district": "-",
-      "postalCode": "-",
-      "country": "-",
-      "raw": "-"
+      "name": "Elif Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:25",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Elif Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
     },
     "payment": {
-      "method": "-",
-      "last4": "-",
+      "method": "Mastercard/EuroCard",
+      "last4": "2222",
       "extra": "-",
-      "text": "-"
+      "text": "Ödeme aracı Mastercard/EuroCard2222 ile biten"
     },
     "items": [
       {
-        "name": "Örnek Su Matarası",
-        "asin": "B000000003",
-        "url": "https://www.amazon.com.tr/dp/B000000003",
-        "image": "https://example.com/urun.jpg",
-        "seller": "Örnek Satıcı",
+        "name": "65W USB-C GaN Hızlı Şarj Adaptörü",
+        "asin": "B068978194X",
+        "url": "https://www.amazon.com.tr/dp/B068978194X",
+        "image": "examples/img/elektronik.svg",
+        "seller": "Mutfak Sanatı",
         "quantity": 1,
-        "unitPrice": 399.0,
-        "lineTotal": 399.0,
-        "status": "İptal edildi",
-        "statusText": "İptal edildi"
+        "unitPrice": 215.9,
+        "lineTotal": 215.9,
+        "status": "-",
+        "statusText": "-"
+      }
+    ]
+  },
+  {
+    "orderNo": "406-8531380-6422534",
+    "date": "2023-02-27",
+    "dateText": "27 Şubat 2023",
+    "total": 67.8,
+    "amounts": {
+      "Ürün Ara Toplamı": 67.8,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 56.5,
+      "KDV": 11.3,
+      "Toplam": 67.8,
+      "Genel Toplam": 67.8
+    },
+    "check": {
+      "itemsSum": 67.8,
+      "subTotal": 67.8,
+      "totalMinusShipping": 67.8,
+      "match": true
+    },
+    "address": {
+      "name": "Elif Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:56",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Elif Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "4444",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard4444 ile biten"
+    },
+    "items": [
+      {
+        "name": "Jel Kalem Seti 12 Renk",
+        "asin": "B094281857X",
+        "url": "https://www.amazon.com.tr/dp/B094281857X",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kitap Diyarı",
+        "quantity": 2,
+        "unitPrice": 33.9,
+        "lineTotal": 67.8,
+        "status": "-",
+        "statusText": "-"
+      }
+    ]
+  },
+  {
+    "orderNo": "406-3531028-2038068",
+    "date": "2023-02-01",
+    "dateText": "1 Şubat 2023",
+    "total": 195.8,
+    "amounts": {
+      "Ürün Ara Toplamı": 195.8,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 163.17,
+      "KDV": 32.63,
+      "Toplam": 195.8,
+      "Genel Toplam": 195.8
+    },
+    "check": {
+      "itemsSum": 195.8,
+      "subTotal": 195.8,
+      "totalMinusShipping": 195.8,
+      "match": true
+    },
+    "address": {
+      "name": "Can Demir",
+      "street": "Kazımdirik Mah. Örnek Sk. No:29",
+      "city": "İzmir",
+      "neighborhood": "Kazımdirik Mah.",
+      "district": "Bornova",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Can Demir, Kazımdirik Mah. Örnek Sk., İzmir 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "4444",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard4444 ile biten"
+    },
+    "items": [
+      {
+        "name": "Vakumlu Saklama Torbası 6'lı",
+        "asin": "B053154591X",
+        "url": "https://www.amazon.com.tr/dp/B053154591X",
+        "image": "examples/img/ev.svg",
+        "seller": "Mutfak Sanatı",
+        "quantity": 2,
+        "unitPrice": 97.9,
+        "lineTotal": 195.8,
+        "status": "-",
+        "statusText": "-"
+      }
+    ]
+  },
+  {
+    "orderNo": "402-7960815-1893502",
+    "date": "2023-01-19",
+    "dateText": "19 Ocak 2023",
+    "total": 507.9,
+    "amounts": {
+      "Ürün Ara Toplamı": 507.9,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 423.25,
+      "KDV": 84.65,
+      "Toplam": 507.9,
+      "Genel Toplam": 507.9
+    },
+    "check": {
+      "itemsSum": 507.9,
+      "subTotal": 507.9,
+      "totalMinusShipping": 507.9,
+      "match": true
+    },
+    "address": {
+      "name": "Mehmet Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:26",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Mehmet Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Visa",
+      "last4": "3333",
+      "extra": "-",
+      "text": "Ödeme aracı Visa3333 ile biten"
+    },
+    "items": [
+      {
+        "name": "Ayarlanabilir Dambıl Seti 20 kg",
+        "asin": "B039801436X",
+        "url": "https://www.amazon.com.tr/dp/B039801436X",
+        "image": "examples/img/spor.svg",
+        "seller": "Kitap Diyarı",
+        "quantity": 1,
+        "unitPrice": 507.9,
+        "lineTotal": 507.9,
+        "status": "-",
+        "statusText": "-"
+      }
+    ]
+  },
+  {
+    "orderNo": "404-6890476-3477824",
+    "date": "2023-01-09",
+    "dateText": "9 Ocak 2023",
+    "total": 73.9,
+    "amounts": {
+      "Ürün Ara Toplamı": 73.9,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 61.58,
+      "KDV": 12.32,
+      "Toplam": 73.9,
+      "Genel Toplam": 73.9
+    },
+    "check": {
+      "itemsSum": 73.9,
+      "subTotal": 73.9,
+      "totalMinusShipping": 73.9,
+      "match": true
+    },
+    "address": {
+      "name": "Elif Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:16",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Elif Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Mastercard/EuroCard",
+      "last4": "2222",
+      "extra": "-",
+      "text": "Ödeme aracı Mastercard/EuroCard2222 ile biten"
+    },
+    "items": [
+      {
+        "name": "Araç İçi Manyetik Telefon Tutucu",
+        "asin": "B094989976X",
+        "url": "https://www.amazon.com.tr/dp/B094989976X",
+        "image": "examples/img/telefon.svg",
+        "seller": "Amazon.com.tr",
+        "quantity": 1,
+        "unitPrice": 73.9,
+        "lineTotal": 73.9,
+        "status": "-",
+        "statusText": "-"
+      }
+    ]
+  },
+  {
+    "orderNo": "404-2696860-9517619",
+    "date": "2022-09-07",
+    "dateText": "7 Eylül 2022",
+    "total": 28.9,
+    "amounts": {
+      "Ürün Ara Toplamı": 28.9,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 24.08,
+      "KDV": 4.82,
+      "Toplam": 28.9,
+      "Genel Toplam": 28.9
+    },
+    "check": {
+      "itemsSum": 28.9,
+      "subTotal": 28.9,
+      "totalMinusShipping": 28.9,
+      "match": true
+    },
+    "address": {
+      "name": "Elif Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:50",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Elif Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Visa",
+      "last4": "1111",
+      "extra": "-",
+      "text": "Ödeme aracı Visa1111 ile biten"
+    },
+    "items": [
+      {
+        "name": "Jel Kalem Seti 12 Renk",
+        "asin": "B028463709X",
+        "url": "https://www.amazon.com.tr/dp/B028463709X",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Amazon.com.tr",
+        "quantity": 1,
+        "unitPrice": 28.9,
+        "lineTotal": 28.9,
+        "status": "-",
+        "statusText": "-"
+      }
+    ]
+  },
+  {
+    "orderNo": "405-2306317-6252285",
+    "date": "2022-08-16",
+    "dateText": "16 Ağustos 2022",
+    "total": 160.8,
+    "amounts": {
+      "Ürün Ara Toplamı": 160.8,
+      "Kargo ve Paketleme": 0,
+      "KDV Öncesi Toplam": 134.0,
+      "KDV": 26.8,
+      "Toplam": 160.8,
+      "Genel Toplam": 160.8
+    },
+    "check": {
+      "itemsSum": 160.8,
+      "subTotal": 160.8,
+      "totalMinusShipping": 160.8,
+      "match": true
+    },
+    "address": {
+      "name": "Mehmet Yılmaz",
+      "street": "Caferağa Mah. Örnek Sk. No:37",
+      "city": "İstanbul",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "postalCode": "34000",
+      "country": "Türkiye",
+      "raw": "Mehmet Yılmaz, Caferağa Mah. Örnek Sk., İstanbul 34000, Türkiye"
+    },
+    "payment": {
+      "method": "Visa",
+      "last4": "1111",
+      "extra": "-",
+      "text": "Ödeme aracı Visa1111 ile biten"
+    },
+    "items": [
+      {
+        "name": "Cam Saklama Kabı Seti 5'li",
+        "asin": "B099663907X",
+        "url": "https://www.amazon.com.tr/dp/B099663907X",
+        "image": "examples/img/mutfak.svg",
+        "seller": "TeknoDünya",
+        "quantity": 1,
+        "unitPrice": 112.9,
+        "lineTotal": 112.9,
+        "status": "-",
+        "statusText": "-"
+      },
+      {
+        "name": "A4 Fotokopi Kağıdı 500'lü",
+        "asin": "B015677713X",
+        "url": "https://www.amazon.com.tr/dp/B015677713X",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kitap Diyarı",
+        "quantity": 1,
+        "unitPrice": 47.9,
+        "lineTotal": 47.9,
+        "status": "-",
+        "statusText": "-"
       }
     ]
   }

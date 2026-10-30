@@ -1,102 +1,1527 @@
 [
   {
-    "orderNo": "900000001",
-    "date": "2026-09-25 21:15",
+    "orderNo": "900242543",
+    "date": "2026-10-06 15:14",
     "status": "Teslim edildi",
-    "total": 398,
+    "total": 524.8,
     "address": {
-      "fullName": "Örnek Kişi",
-      "address": "Örnek Mah. Deneme Sk. No:1 D:2",
-      "neighborhood": "Örnek Mah.",
-      "district": "Merkez",
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:28 D:10",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
       "city": "İstanbul",
-      "phone": "050*****00"
+      "phone": "0546*****14"
     },
     "payment": {
       "type": "PAY_WITH_CARD",
       "method": "Tek çekim",
-      "card": "000000******0000",
+      "card": "540000******4444",
       "cardType": "MASTERCARD",
-      "bank": "Örnek Bank",
-      "subTotal": 398,
-      "cargo": 59.99,
-      "bonus": 0.0,
-      "serviceFee": 0,
-      "installmentFee": 0,
-      "additionalFee": 0,
-      "total": 398
-    },
-    "discounts": [
-      {
-        "name": "Kargo Bedava",
-        "amount": 59.99
-      }
-    ],
-    "items": [
-      {
-        "name": "Örnek A4 Fotokopi Kağıdı 500'lü",
-        "quantity": 2,
-        "unitPrice": 199,
-        "lineTotal": 398,
-        "productId": 100000001,
-        "url": "https://www.trendyol.com/ornek-marka/ornek-urun-p-100000001",
-        "image": "https://example.com/urun.jpg",
-        "seller": "Örnek Satıcı",
-        "variant": "Tek Ebat",
-        "category": "Fotokopi & Baskı Kağıtları",
-        "status": "Teslim edildi",
-        "cargoCompany": "TRENDYOL EXPRESS",
-        "trackingNumber": "7000000000000001",
-        "deliveredAt": "2026-09-28 11:25",
-        "deliveredTo": "Örnek Kişi"
-      }
-    ]
-  },
-  {
-    "orderNo": "900000002",
-    "date": "2026-08-10 09:02",
-    "status": "İade edildi",
-    "total": 749,
-    "address": {
-      "fullName": "Örnek Kişi",
-      "address": "Örnek Mah. Deneme Sk. No:1 D:2",
-      "neighborhood": "Örnek Mah.",
-      "district": "Merkez",
-      "city": "İstanbul",
-      "phone": "050*****00"
-    },
-    "payment": {
-      "type": "PAY_WITH_CARD",
-      "method": "Tek çekim",
-      "card": "000000******0000",
-      "cardType": "MASTERCARD",
-      "bank": "Örnek Bank",
-      "subTotal": 749,
+      "bank": "QNB Finansbank",
+      "subTotal": 524.8,
       "cargo": 0.0,
       "bonus": 0.0,
       "serviceFee": 0,
       "installmentFee": 0,
       "additionalFee": 0,
-      "total": 749
+      "total": 524.8
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 66.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Araç İçi Manyetik Telefon Tutucu",
+        "quantity": 1,
+        "unitPrice": 341.9,
+        "lineTotal": 341.9,
+        "productId": 477040284,
+        "url": "https://www.trendyol.com/oto-aksesuar/urun-p-788785773",
+        "image": "examples/img/telefon.svg",
+        "seller": "Oto Aksesuar",
+        "variant": "Siyah",
+        "category": "Telefon Tutucu",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000744745947806",
+        "deliveredAt": "2026-10-09 15:14",
+        "deliveredTo": "Elif Yılmaz"
+      },
+      {
+        "name": "Akıllı Telefon Şeffaf Silikon Kılıf",
+        "quantity": 1,
+        "unitPrice": 182.9,
+        "lineTotal": 182.9,
+        "productId": 380477683,
+        "url": "https://www.trendyol.com/kılıfçı/urun-p-291735734",
+        "image": "examples/img/telefon.svg",
+        "seller": "Kılıfçı",
+        "variant": "Şeffaf",
+        "category": "Telefon Kılıfı",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000039794875013",
+        "deliveredAt": "2026-10-07 15:14",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900155434",
+    "date": "2026-04-07 23:52",
+    "status": "Teslim edildi",
+    "total": 4861.8,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:43 D:11",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0541*****56"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "510000******2222",
+      "cardType": "MASTERCARD",
+      "bank": "Akbank",
+      "subTotal": 4861.8,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 4861.8
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 58.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Mekanik Klavye TR Q Kırmızı Switch",
+        "quantity": 2,
+        "unitPrice": 2430.9,
+        "lineTotal": 4861.8,
+        "productId": 384602384,
+        "url": "https://www.trendyol.com/oyuncu-dükkanı/urun-p-666585408",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Oyuncu Dükkanı",
+        "variant": "Siyah",
+        "category": "Klavye",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000831244947195",
+        "deliveredAt": "2026-04-09 23:52",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900115839",
+    "date": "2026-04-03 22:34",
+    "status": "Teslim edildi",
+    "total": 641.8,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:43 D:5",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0552*****87"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 641.8,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 641.8
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 53.99
+      }
+    ],
+    "items": [
+      {
+        "name": "USB-C - USB-C Örgülü Kablo 2 m",
+        "quantity": 1,
+        "unitPrice": 188.9,
+        "lineTotal": 188.9,
+        "productId": 719927151,
+        "url": "https://www.trendyol.com/kablo-evi/urun-p-306468299",
+        "image": "examples/img/elektronik.svg",
+        "seller": "Kablo Evi",
+        "variant": "Gri",
+        "category": "Kablo",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000047543377362",
+        "deliveredAt": "2026-04-06 22:34",
+        "deliveredTo": "Elif Yılmaz"
+      },
+      {
+        "name": "Cam Saklama Kabı Seti 5'li",
+        "quantity": 1,
+        "unitPrice": 452.9,
+        "lineTotal": 452.9,
+        "productId": 349957310,
+        "url": "https://www.trendyol.com/mutfak-sanatı/urun-p-208449460",
+        "image": "examples/img/mutfak.svg",
+        "seller": "Mutfak Sanatı",
+        "variant": "Tek Ebat",
+        "category": "Saklama Kabı",
+        "status": "Teslim edildi",
+        "cargoCompany": "Aras Kargo",
+        "trackingNumber": "7000499410093881",
+        "deliveredAt": "2026-04-04 22:34",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900179191",
+    "date": "2026-03-31 18:51",
+    "status": "Teslim edildi",
+    "total": 813.8,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:54 D:1",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0532*****96"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "400000******1111",
+      "cardType": "VISA",
+      "bank": "Garanti BBVA",
+      "subTotal": 813.8,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 813.8
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 52.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Cam Saklama Kabı Seti 5'li",
+        "quantity": 2,
+        "unitPrice": 406.9,
+        "lineTotal": 813.8,
+        "productId": 399085574,
+        "url": "https://www.trendyol.com/mutfak-sanatı/urun-p-596743109",
+        "image": "examples/img/mutfak.svg",
+        "seller": "Mutfak Sanatı",
+        "variant": "Tek Ebat",
+        "category": "Saklama Kabı",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000485655080082",
+        "deliveredAt": "2026-04-02 18:51",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900123758",
+    "date": "2025-10-18 10:38",
+    "status": "Teslim edildi",
+    "total": 631.62,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:59 D:10",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0558*****91"
+    },
+    "payment": {
+      "type": "PAY_WITH_WALLET",
+      "method": "Tek çekim",
+      "card": "-",
+      "cardType": "-",
+      "bank": "-",
+      "subTotal": 701.8,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 631.62
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 46.99
+      },
+      {
+        "name": "Sepette %10 İndirim",
+        "amount": 70.18
+      }
+    ],
+    "items": [
+      {
+        "name": "Kablosuz Sessiz Mouse",
+        "quantity": 2,
+        "unitPrice": 350.9,
+        "lineTotal": 701.8,
+        "productId": 835098955,
+        "url": "https://www.trendyol.com/ofis-plus/urun-p-448195935",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Ofis Plus",
+        "variant": "Gri",
+        "category": "Mouse",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000902926886137",
+        "deliveredAt": "2025-10-20 10:38",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900100001",
+    "date": "2025-09-30 11:01",
+    "status": "Teslim edildi",
+    "total": 181.89,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:46 D:11",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0552*****69"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "400000******1111",
+      "cardType": "VISA",
+      "bank": "Garanti BBVA",
+      "subTotal": 136.9,
+      "cargo": 44.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 181.89
     },
     "discounts": [],
     "items": [
       {
-        "name": "Örnek Masa Lambası",
+        "name": "Spiralli Kareli Defter A4 3'lü",
         "quantity": 1,
-        "unitPrice": 749,
-        "lineTotal": 749,
-        "productId": 100000002,
-        "url": "https://www.trendyol.com/ornek-marka/ornek-urun-p-100000002",
-        "image": "https://example.com/urun.jpg",
-        "seller": "Örnek Satıcı",
+        "unitPrice": 136.9,
+        "lineTotal": 136.9,
+        "productId": 734036506,
+        "url": "https://www.trendyol.com/kırtasiye-plus/urun-p-553035110",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kırtasiye Plus",
+        "variant": "Karışık",
+        "category": "Defter",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000098912225902",
+        "deliveredAt": "2025-10-01 11:01",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900147515",
+    "date": "2025-09-01 17:53",
+    "status": "Teslim edildi",
+    "total": 216.89,
+    "address": {
+      "fullName": "Zeynep Kaya",
+      "address": "Kızılay Mah. Örnek Sk. No:16 D:10",
+      "neighborhood": "Kızılay Mah.",
+      "district": "Çankaya",
+      "city": "Ankara",
+      "phone": "0532*****10"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 167.9,
+      "cargo": 48.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 216.89
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Robot Süpürge Yan Fırça Seti",
+        "quantity": 1,
+        "unitPrice": 167.9,
+        "lineTotal": 167.9,
+        "productId": 743111853,
+        "url": "https://www.trendyol.com/ev-çözüm/urun-p-448059918",
+        "image": "examples/img/ev.svg",
+        "seller": "Ev Çözüm",
         "variant": "Tek Ebat",
-        "category": "Aydınlatma",
+        "category": "Süpürge Aksesuarı",
+        "status": "Teslim edildi",
+        "cargoCompany": "Aras Kargo",
+        "trackingNumber": "7000120342736258",
+        "deliveredAt": "2025-09-02 17:53",
+        "deliveredTo": "Zeynep Kaya"
+      }
+    ]
+  },
+  {
+    "orderNo": "900266300",
+    "date": "2025-08-20 18:05",
+    "status": "Teslim edildi",
+    "total": 309.89,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:25 D:8",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0542*****31"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "510000******2222",
+      "cardType": "MASTERCARD",
+      "bank": "Akbank",
+      "subTotal": 267.9,
+      "cargo": 41.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 309.89
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Yoga Matı 6 mm",
+        "quantity": 1,
+        "unitPrice": 267.9,
+        "lineTotal": 267.9,
+        "productId": 362897676,
+        "url": "https://www.trendyol.com/spor-merkezi/urun-p-610173760",
+        "image": "examples/img/spor.svg",
+        "seller": "Spor Merkezi",
+        "variant": "Mor",
+        "category": "Yoga Matı",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000845463185629",
+        "deliveredAt": "2025-08-21 18:05",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900258381",
+    "date": "2025-04-09 12:12",
+    "status": "Teslim edildi",
+    "total": 296.79,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:19 D:9",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0551*****81"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "510000******2222",
+      "cardType": "MASTERCARD",
+      "bank": "Akbank",
+      "subTotal": 256.8,
+      "cargo": 39.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 296.79
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Atomik Alışkanlıklar",
+        "quantity": 1,
+        "unitPrice": 146.9,
+        "lineTotal": 146.9,
+        "productId": 536019893,
+        "url": "https://www.trendyol.com/okur-kitabevi/urun-p-688343096",
+        "image": "examples/img/kitap.svg",
+        "seller": "Okur Kitabevi",
+        "variant": "Tek Ebat",
+        "category": "Kişisel Gelişim",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000314837745591",
+        "deliveredAt": "2025-04-12 12:12",
+        "deliveredTo": "Mehmet Yılmaz"
+      },
+      {
+        "name": "Spiralli Kareli Defter A4 3'lü",
+        "quantity": 1,
+        "unitPrice": 109.9,
+        "lineTotal": 109.9,
+        "productId": 599277266,
+        "url": "https://www.trendyol.com/kırtasiye-plus/urun-p-574364121",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kırtasiye Plus",
+        "variant": "Karışık",
+        "category": "Defter",
+        "status": "Teslim edildi",
+        "cargoCompany": "Aras Kargo",
+        "trackingNumber": "7000234830030878",
+        "deliveredAt": "2025-04-12 12:12",
+        "deliveredTo": "Mehmet Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900163353",
+    "date": "2025-01-23 22:07",
+    "status": "Teslim edildi",
+    "total": 690.21,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:16 D:5",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0551*****62"
+    },
+    "payment": {
+      "type": "PAY_WITH_WALLET",
+      "method": "Tek çekim",
+      "card": "-",
+      "cardType": "-",
+      "bank": "-",
+      "subTotal": 766.9,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 690.21
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 38.99
+      },
+      {
+        "name": "Sepette %10 İndirim",
+        "amount": 76.69
+      }
+    ],
+    "items": [
+      {
+        "name": "Kablosuz Kulak İçi Bluetooth Kulaklık",
+        "quantity": 1,
+        "unitPrice": 766.9,
+        "lineTotal": 766.9,
+        "productId": 176228245,
+        "url": "https://www.trendyol.com/teknodünya/urun-p-860038427",
+        "image": "examples/img/elektronik.svg",
+        "seller": "TeknoDünya",
+        "variant": "Siyah",
+        "category": "Kulaklık",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000249360964064",
+        "deliveredAt": "2025-01-24 22:07",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900282138",
+    "date": "2024-12-28 21:53",
+    "status": "Teslim edildi",
+    "total": 233.79,
+    "address": {
+      "fullName": "Zeynep Kaya",
+      "address": "Kızılay Mah. Örnek Sk. No:22 D:6",
+      "neighborhood": "Kızılay Mah.",
+      "district": "Çankaya",
+      "city": "Ankara",
+      "phone": "0558*****69"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 199.8,
+      "cargo": 33.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 233.79
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Spiralli Kareli Defter A4 3'lü",
+        "quantity": 2,
+        "unitPrice": 99.9,
+        "lineTotal": 199.8,
+        "productId": 784683755,
+        "url": "https://www.trendyol.com/kırtasiye-plus/urun-p-397760792",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kırtasiye Plus",
+        "variant": "Karışık",
+        "category": "Defter",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000689276095704",
+        "deliveredAt": "2024-12-30 21:53",
+        "deliveredTo": "Zeynep Kaya"
+      }
+    ]
+  },
+  {
+    "orderNo": "900313814",
+    "date": "2024-10-25 11:36",
+    "status": "Teslim edildi",
+    "total": 94.89,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:59 D:7",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0542*****91"
+    },
+    "payment": {
+      "type": "PAY_WITH_WALLET",
+      "method": "Tek çekim",
+      "card": "-",
+      "cardType": "-",
+      "bank": "-",
+      "subTotal": 62.9,
+      "cargo": 31.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 94.89
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Jel Kalem Seti 12 Renk",
+        "quantity": 1,
+        "unitPrice": 62.9,
+        "lineTotal": 62.9,
+        "productId": 935147672,
+        "url": "https://www.trendyol.com/kırtasiye-plus/urun-p-979717936",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kırtasiye Plus",
+        "variant": "Karışık",
+        "category": "Kalem",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000343445860556",
+        "deliveredAt": "2024-10-26 11:36",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900107920",
+    "date": "2024-07-07 15:28",
+    "status": "Teslim edildi",
+    "total": 90.89,
+    "address": {
+      "fullName": "Can Demir",
+      "address": "Kazımdirik Mah. Örnek Sk. No:23 D:10",
+      "neighborhood": "Kazımdirik Mah.",
+      "district": "Bornova",
+      "city": "İzmir",
+      "phone": "0538*****05"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "400000******1111",
+      "cardType": "VISA",
+      "bank": "Garanti BBVA",
+      "subTotal": 61.9,
+      "cargo": 28.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 90.89
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Jel Kalem Seti 12 Renk",
+        "quantity": 1,
+        "unitPrice": 61.9,
+        "lineTotal": 61.9,
+        "productId": 398362082,
+        "url": "https://www.trendyol.com/kırtasiye-plus/urun-p-266944844",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kırtasiye Plus",
+        "variant": "Karışık",
+        "category": "Kalem",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000841629821539",
+        "deliveredAt": "2024-07-10 15:28",
+        "deliveredTo": "Can Demir"
+      }
+    ]
+  },
+  {
+    "orderNo": "900250462",
+    "date": "2024-04-27 14:16",
+    "status": "Teslim edildi",
+    "total": 717.9,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:21 D:7",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0552*****37"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 717.9,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 717.9
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 27.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Filtre Kahve Makinesi",
+        "quantity": 1,
+        "unitPrice": 717.9,
+        "lineTotal": 717.9,
+        "productId": 813219781,
+        "url": "https://www.trendyol.com/kahve-köşesi/urun-p-454549587",
+        "image": "examples/img/mutfak.svg",
+        "seller": "Kahve Köşesi",
+        "variant": "Siyah",
+        "category": "Kahve Makinesi",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000727197730438",
+        "deliveredAt": "2024-04-28 14:16",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900139596",
+    "date": "2024-04-20 22:33",
+    "status": "Teslim edildi",
+    "total": 131.89,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:49 D:3",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0546*****13"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 103.9,
+      "cargo": 27.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 131.89
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Atomik Alışkanlıklar",
+        "quantity": 1,
+        "unitPrice": 103.9,
+        "lineTotal": 103.9,
+        "productId": 925276600,
+        "url": "https://www.trendyol.com/okur-kitabevi/urun-p-788227492",
+        "image": "examples/img/kitap.svg",
+        "seller": "Okur Kitabevi",
+        "variant": "Tek Ebat",
+        "category": "Kişisel Gelişim",
+        "status": "Teslim edildi",
+        "cargoCompany": "Aras Kargo",
+        "trackingNumber": "7000322601660137",
+        "deliveredAt": "2024-04-23 22:33",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900131677",
+    "date": "2023-12-05 14:41",
+    "status": "Teslim edildi",
+    "total": 1030.7,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:28 D:10",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0532*****49"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "510000******2222",
+      "cardType": "MASTERCARD",
+      "bank": "Akbank",
+      "subTotal": 1030.7,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 1030.7
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 24.99
+      }
+    ],
+    "items": [
+      {
+        "name": "Mekanik Klavye TR Q Kırmızı Switch",
+        "quantity": 1,
+        "unitPrice": 912.9,
+        "lineTotal": 912.9,
+        "productId": 902099969,
+        "url": "https://www.trendyol.com/oyuncu-dükkanı/urun-p-727694430",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Oyuncu Dükkanı",
+        "variant": "Siyah",
+        "category": "Klavye",
+        "status": "Teslim edildi",
+        "cargoCompany": "Aras Kargo",
+        "trackingNumber": "7000643806247029",
+        "deliveredAt": "2023-12-08 14:41",
+        "deliveredTo": "Mehmet Yılmaz"
+      },
+      {
+        "name": "Akıllı Telefon Şeffaf Silikon Kılıf",
+        "quantity": 2,
+        "unitPrice": 58.9,
+        "lineTotal": 117.8,
+        "productId": 647099690,
+        "url": "https://www.trendyol.com/kılıfçı/urun-p-629908599",
+        "image": "examples/img/telefon.svg",
+        "seller": "Kılıfçı",
+        "variant": "Şeffaf",
+        "category": "Telefon Kılıfı",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000054785667210",
+        "deliveredAt": "2023-12-07 14:41",
+        "deliveredTo": "Mehmet Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900210867",
+    "date": "2023-07-14 19:18",
+    "status": "Teslim edildi",
+    "total": 108.89,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:39 D:4",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0552*****43"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "510000******2222",
+      "cardType": "MASTERCARD",
+      "bank": "Akbank",
+      "subTotal": 86.9,
+      "cargo": 21.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 108.89
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Python ile Programlamaya Giriş",
+        "quantity": 1,
+        "unitPrice": 86.9,
+        "lineTotal": 86.9,
+        "productId": 812308209,
+        "url": "https://www.trendyol.com/kitap-diyarı/urun-p-211225158",
+        "image": "examples/img/kitap.svg",
+        "seller": "Kitap Diyarı",
+        "variant": "Tek Ebat",
+        "category": "Bilgisayar Kitapları",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000125689924079",
+        "deliveredAt": "2023-07-17 19:18",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900202948",
+    "date": "2023-07-02 16:25",
+    "status": "Teslim edildi",
+    "total": 141.89,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:9 D:6",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0558*****08"
+    },
+    "payment": {
+      "type": "PAY_WITH_WALLET",
+      "method": "Tek çekim",
+      "card": "-",
+      "cardType": "-",
+      "bank": "-",
+      "subTotal": 119.9,
+      "cargo": 21.99,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 141.89
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Vakumlu Saklama Torbası 6'lı",
+        "quantity": 1,
+        "unitPrice": 119.9,
+        "lineTotal": 119.9,
+        "productId": 110002396,
+        "url": "https://www.trendyol.com/ev-çözüm/urun-p-592080329",
+        "image": "examples/img/ev.svg",
+        "seller": "Ev Çözüm",
+        "variant": "Tek Ebat",
+        "category": "Hurç",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000622763619778",
+        "deliveredAt": "2023-07-03 16:25",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900187110",
+    "date": "2023-06-28 13:26",
+    "status": "Teslim edildi",
+    "total": 541.7,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:33 D:14",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0546*****20"
+    },
+    "payment": {
+      "type": "PAY_WITH_WALLET",
+      "method": "Tek çekim",
+      "card": "-",
+      "cardType": "-",
+      "bank": "-",
+      "subTotal": 541.7,
+      "cargo": 0.0,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 541.7
+    },
+    "discounts": [
+      {
+        "name": "Kargo Bedava",
+        "amount": 18.77
+      }
+    ],
+    "items": [
+      {
+        "name": "1000 Parça Puzzle Kapadokya",
+        "quantity": 1,
+        "unitPrice": 95.9,
+        "lineTotal": 95.9,
+        "productId": 384759615,
+        "url": "https://www.trendyol.com/hobi-atölyesi/urun-p-941889393",
+        "image": "examples/img/hobi.svg",
+        "seller": "Hobi Atölyesi",
+        "variant": "Tek Ebat",
+        "category": "Puzzle",
+        "status": "Teslim edildi",
+        "cargoCompany": "Aras Kargo",
+        "trackingNumber": "7000465081604082",
+        "deliveredAt": "2023-07-02 13:26",
+        "deliveredTo": "Mehmet Yılmaz"
+      },
+      {
+        "name": "65W USB-C GaN Hızlı Şarj Adaptörü",
+        "quantity": 2,
+        "unitPrice": 222.9,
+        "lineTotal": 445.8,
+        "productId": 333754555,
+        "url": "https://www.trendyol.com/şarj-market/urun-p-162795957",
+        "image": "examples/img/elektronik.svg",
+        "seller": "Şarj Market",
+        "variant": "Beyaz",
+        "category": "Şarj Cihazı",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000595865453957",
+        "deliveredAt": "2023-07-01 13:26",
+        "deliveredTo": "Mehmet Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900171272",
+    "date": "2023-05-13 12:46",
+    "status": "Teslim edildi",
+    "total": 274.85,
+    "address": {
+      "fullName": "Can Demir",
+      "address": "Kazımdirik Mah. Örnek Sk. No:42 D:2",
+      "neighborhood": "Kazımdirik Mah.",
+      "district": "Bornova",
+      "city": "İzmir",
+      "phone": "0531*****51"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "400000******1111",
+      "cardType": "VISA",
+      "bank": "Garanti BBVA",
+      "subTotal": 255.8,
+      "cargo": 19.05,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 274.85
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Yoga Matı 6 mm",
+        "quantity": 2,
+        "unitPrice": 127.9,
+        "lineTotal": 255.8,
+        "productId": 201281557,
+        "url": "https://www.trendyol.com/spor-merkezi/urun-p-204078666",
+        "image": "examples/img/spor.svg",
+        "seller": "Spor Merkezi",
+        "variant": "Mor",
+        "category": "Yoga Matı",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000388398407379",
+        "deliveredAt": "2023-05-15 12:46",
+        "deliveredTo": "Can Demir"
+      }
+    ]
+  },
+  {
+    "orderNo": "900218786",
+    "date": "2023-04-21 16:32",
+    "status": "Teslim edildi",
+    "total": 145.38,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:8 D:2",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0558*****88"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "540000******4444",
+      "cardType": "MASTERCARD",
+      "bank": "QNB Finansbank",
+      "subTotal": 125.8,
+      "cargo": 19.58,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 145.38
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "USB-C - USB-C Örgülü Kablo 2 m",
+        "quantity": 2,
+        "unitPrice": 62.9,
+        "lineTotal": 125.8,
+        "productId": 103807155,
+        "url": "https://www.trendyol.com/kablo-evi/urun-p-458153605",
+        "image": "examples/img/elektronik.svg",
+        "seller": "Kablo Evi",
+        "variant": "Gri",
+        "category": "Kablo",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000177218748445",
+        "deliveredAt": "2023-04-22 16:32",
+        "deliveredTo": "Mehmet Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900305895",
+    "date": "2023-03-08 09:16",
+    "status": "Teslim edildi",
+    "total": 219.46,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:40 D:3",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0537*****16"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "510000******2222",
+      "cardType": "MASTERCARD",
+      "bank": "Akbank",
+      "subTotal": 200.7,
+      "cargo": 18.76,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 219.46
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Araç İçi Manyetik Telefon Tutucu",
+        "quantity": 2,
+        "unitPrice": 80.9,
+        "lineTotal": 161.8,
+        "productId": 370874491,
+        "url": "https://www.trendyol.com/oto-aksesuar/urun-p-996478772",
+        "image": "examples/img/telefon.svg",
+        "seller": "Oto Aksesuar",
+        "variant": "Siyah",
+        "category": "Telefon Tutucu",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000019199821669",
+        "deliveredAt": "2023-03-12 09:16",
+        "deliveredTo": "Mehmet Yılmaz"
+      },
+      {
+        "name": "Jel Kalem Seti 12 Renk",
+        "quantity": 1,
+        "unitPrice": 38.9,
+        "lineTotal": 38.9,
+        "productId": 340756713,
+        "url": "https://www.trendyol.com/kırtasiye-plus/urun-p-798086909",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kırtasiye Plus",
+        "variant": "Karışık",
+        "category": "Kalem",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000045748937891",
+        "deliveredAt": "2023-03-11 09:16",
+        "deliveredTo": "Mehmet Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900234624",
+    "date": "2023-01-27 13:56",
+    "status": "İade edildi",
+    "total": 225.16,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:59 D:8",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0541*****39"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "510000******2222",
+      "cardType": "MASTERCARD",
+      "bank": "Akbank",
+      "subTotal": 229.8,
+      "cargo": 18.34,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 225.16
+    },
+    "discounts": [
+      {
+        "name": "Sepette %10 İndirim",
+        "amount": 22.98
+      }
+    ],
+    "items": [
+      {
+        "name": "Yoga Matı 6 mm",
+        "quantity": 2,
+        "unitPrice": 114.9,
+        "lineTotal": 229.8,
+        "productId": 386480450,
+        "url": "https://www.trendyol.com/spor-merkezi/urun-p-270937380",
+        "image": "examples/img/spor.svg",
+        "seller": "Spor Merkezi",
+        "variant": "Mor",
+        "category": "Yoga Matı",
+        "status": "İade edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000417076094887",
+        "deliveredAt": "2023-01-29 13:56",
+        "deliveredTo": "Mehmet Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900226705",
+    "date": "2022-12-31 09:53",
+    "status": "Teslim edildi",
+    "total": 159.06,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:48 D:3",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0559*****30"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "540000******4444",
+      "cardType": "MASTERCARD",
+      "bank": "QNB Finansbank",
+      "subTotal": 142.9,
+      "cargo": 16.16,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 159.06
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "LED Masa Lambası Dokunmatik",
+        "quantity": 1,
+        "unitPrice": 142.9,
+        "lineTotal": 142.9,
+        "productId": 954829815,
+        "url": "https://www.trendyol.com/işık-evi/urun-p-142836793",
+        "image": "examples/img/ev.svg",
+        "seller": "Işık Evi",
+        "variant": "Beyaz",
+        "category": "Masa Lambası",
+        "status": "Teslim edildi",
+        "cargoCompany": "Aras Kargo",
+        "trackingNumber": "7000748226581356",
+        "deliveredAt": "2023-01-03 09:53",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900274219",
+    "date": "2022-12-28 08:57",
+    "status": "Teslim edildi",
+    "total": 251.04,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:58 D:8",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0549*****92"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 233.8,
+      "cargo": 17.24,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 251.04
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Kablosuz Sessiz Mouse",
+        "quantity": 2,
+        "unitPrice": 116.9,
+        "lineTotal": 233.8,
+        "productId": 230307805,
+        "url": "https://www.trendyol.com/ofis-plus/urun-p-590122159",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Ofis Plus",
+        "variant": "Gri",
+        "category": "Mouse",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000510248199023",
+        "deliveredAt": "2022-12-30 08:57",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900290057",
+    "date": "2022-08-13 12:09",
+    "status": "Teslim edildi",
+    "total": 59.82,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:49 D:10",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0542*****61"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "400000******1111",
+      "cardType": "VISA",
+      "bank": "Garanti BBVA",
+      "subTotal": 45.9,
+      "cargo": 13.92,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 59.82
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "A4 Fotokopi Kağıdı 500'lü",
+        "quantity": 1,
+        "unitPrice": 45.9,
+        "lineTotal": 45.9,
+        "productId": 455281184,
+        "url": "https://www.trendyol.com/kırtasiye-plus/urun-p-682624278",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kırtasiye Plus",
+        "variant": "Tek Ebat",
+        "category": "Fotokopi Kağıdı",
+        "status": "Teslim edildi",
+        "cargoCompany": "Aras Kargo",
+        "trackingNumber": "7000066210246191",
+        "deliveredAt": "2022-08-17 12:09",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900195029",
+    "date": "2022-06-25 10:54",
+    "status": "İade edildi",
+    "total": 64.61,
+    "address": {
+      "fullName": "Elif Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:14 D:11",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0552*****40"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "420000******3333",
+      "cardType": "VISA",
+      "bank": "Yapı Kredi Bankası",
+      "subTotal": 50.9,
+      "cargo": 13.71,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 64.61
+    },
+    "discounts": [],
+    "items": [
+      {
+        "name": "Atomik Alışkanlıklar",
+        "quantity": 1,
+        "unitPrice": 50.9,
+        "lineTotal": 50.9,
+        "productId": 721609600,
+        "url": "https://www.trendyol.com/okur-kitabevi/urun-p-738360085",
+        "image": "examples/img/kitap.svg",
+        "seller": "Okur Kitabevi",
+        "variant": "Tek Ebat",
+        "category": "Kişisel Gelişim",
         "status": "İade edildi",
         "cargoCompany": "TRENDYOL EXPRESS",
-        "trackingNumber": "7000000000000001",
-        "deliveredAt": "2026-09-28 11:25",
-        "deliveredTo": "Örnek Kişi"
+        "trackingNumber": "7000088559569253",
+        "deliveredAt": "2022-06-27 10:54",
+        "deliveredTo": "Elif Yılmaz"
+      }
+    ]
+  },
+  {
+    "orderNo": "900297976",
+    "date": "2022-03-13 19:19",
+    "status": "Teslim edildi",
+    "total": 165.01,
+    "address": {
+      "fullName": "Mehmet Yılmaz",
+      "address": "Caferağa Mah. Örnek Sk. No:28 D:3",
+      "neighborhood": "Caferağa Mah.",
+      "district": "Kadıköy",
+      "city": "İstanbul",
+      "phone": "0557*****59"
+    },
+    "payment": {
+      "type": "PAY_WITH_CARD",
+      "method": "Tek çekim",
+      "card": "400000******1111",
+      "cardType": "VISA",
+      "bank": "Garanti BBVA",
+      "subTotal": 169.7,
+      "cargo": 12.28,
+      "bonus": 0.0,
+      "serviceFee": 0,
+      "installmentFee": 0,
+      "additionalFee": 0,
+      "total": 165.01
+    },
+    "discounts": [
+      {
+        "name": "Sepette %10 İndirim",
+        "amount": 16.97
+      }
+    ],
+    "items": [
+      {
+        "name": "Cam Saklama Kabı Seti 5'li",
+        "quantity": 1,
+        "unitPrice": 95.9,
+        "lineTotal": 95.9,
+        "productId": 567975319,
+        "url": "https://www.trendyol.com/mutfak-sanatı/urun-p-621454127",
+        "image": "examples/img/mutfak.svg",
+        "seller": "Mutfak Sanatı",
+        "variant": "Tek Ebat",
+        "category": "Saklama Kabı",
+        "status": "Teslim edildi",
+        "cargoCompany": "TRENDYOL EXPRESS",
+        "trackingNumber": "7000371037316428",
+        "deliveredAt": "2022-03-16 19:19",
+        "deliveredTo": "Mehmet Yılmaz"
+      },
+      {
+        "name": "Spiralli Kareli Defter A4 3'lü",
+        "quantity": 2,
+        "unitPrice": 36.9,
+        "lineTotal": 73.8,
+        "productId": 237039296,
+        "url": "https://www.trendyol.com/kırtasiye-plus/urun-p-768143326",
+        "image": "examples/img/kirtasiye.svg",
+        "seller": "Kırtasiye Plus",
+        "variant": "Karışık",
+        "category": "Defter",
+        "status": "Teslim edildi",
+        "cargoCompany": "Yurtiçi Kargo",
+        "trackingNumber": "7000996548232697",
+        "deliveredAt": "2022-03-17 19:19",
+        "deliveredTo": "Mehmet Yılmaz"
       }
     ]
   }

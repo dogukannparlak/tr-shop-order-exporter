@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Siparişlerim · tr-shop-order-exporter</title>
+  <link rel="stylesheet" href="web/css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Siparişlerim</h1>
+      <p class="muted small">Hepsiburada, Trendyol, Trendyol Milla, Amazon ve Temu scraper çıktıları. Sipariş verisi tarayıcıdan çıkmaz.</p>
+    </div>
+    <div class="actions">
+      <button id="pick-folder" class="tb-btn primary" type="button">Klasör seç</button>
+      <button id="reconnect" class="tb-btn primary" type="button" hidden>Klasörü oku</button>
+      <button id="reload" class="tb-btn" type="button" hidden>Yenile</button>
+      <label class="tb-btn">JSON yükle<input id="file" type="file" accept=".json,application/json" multiple hidden></label>
+      <button id="clear-all" class="tb-btn" type="button" hidden>Temizle</button>
+    </div>
+  </header>
+
+  <p id="folder-status" class="muted small folder-status"></p>
+  <div id="sources" class="sources"></div>
+  <ul id="report" class="report"></ul>
+
+  <main>
+    <section id="empty" class="drop">
+      <p><strong>Scraper'ların indirdiği JSON'ları bir klasöre koy</strong> (ör. <code>data/</code>), sonra <em>Klasör seç</em>.</p>
+    </section>
+
+    <div id="dashboard" hidden>
+      <section id="filters" class="filters"></section>
+      <section id="summary" class="card summary"></section>
+      <section id="chart" class="card"></section>
+      <div id="breakdowns" class="grid"></div>
+      <section id="items" class="card"></section>
+    </div>
+  </main>
+
+  <div class="drop-overlay">Bırak: JSON dosyaları yüklenecek</div>
+
+  <script src="web/js/util.js"></script>
+  <script src="web/js/rates.js"></script>
+  <script src="web/js/adapters/hepsiburada.js"></script>
+  <script src="web/js/adapters/trendyol.js"></script>
+  <script src="web/js/adapters/amazon.js"></script>
+  <script src="web/js/adapters/temu.js"></script>
+  <script src="web/js/data.js"></script>
+  <script src="web/js/folder.js"></script>
+  <script src="web/js/components/table.js"></script>
+  <script src="web/js/views/filters.js"></script>
+  <script src="web/js/views/summary.js"></script>
+  <script src="web/js/views/chart.js"></script>
+  <script src="web/js/views/breakdowns.js"></script>
+  <script src="web/js/views/items.js"></script>
+  <script src="web/js/app.js"></script>
+</body>
+</html>

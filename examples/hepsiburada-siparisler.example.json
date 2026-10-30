@@ -1,121 +1,1460 @@
 [
   {
-    "orderNo": "1000000001",
+    "orderNo": "4470423569",
     "status": "Sipariş tamamlandı",
-    "date": "02 Ekim 2026",
-    "total": "1.299,00 TL",
+    "date": "21 Ağustos 2026",
+    "total": "12.741,80 TL",
     "address": {
       "label": "Ev",
-      "detail": "Örnek Mah. Deneme Sk. No:1 D:2",
-      "region": "Örnek Mah. Merkez / İstanbul",
-      "recipient": "Örnek Kişi"
+      "detail": "Kızılay Mah. Örnek Sk. No:57 D:12",
+      "region": "Kızılay Mah. Çankaya / Ankara",
+      "recipient": "Zeynep Kaya"
     },
     "shipments": [
       {
-        "seller": "Örnek Mağaza",
+        "seller": "Ekran Merkezi",
         "deliveryStatus": "Teslim edildi",
-        "deliveryDate": "04 Eki Paz 2026, 17:38",
-        "receivedBy": "Örnek Kişi",
-        "trackingCode": "10000000000001",
+        "deliveryDate": "22 Ağu Cmt 2026, 08:42",
+        "receivedBy": "Zeynep Kaya",
+        "trackingCode": "10292932052116",
         "items": [
           {
-            "name": "Örnek Kablosuz Kulaklık",
-            "quantity": 1,
-            "price": "999,00 TL",
-            "unitPrice": "999,00 TL",
-            "productCode": "HBV0000000001",
-            "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000001",
-            "image": "https://example.com/urun.jpg"
-          },
-          {
-            "name": "Örnek USB-C Kablo",
+            "name": "27 inç IPS Monitör 75 Hz",
             "quantity": 2,
-            "price": "300,00 TL",
-            "unitPrice": "150,00 TL",
-            "productCode": "HBV0000000002",
-            "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000002",
-            "image": "https://example.com/urun.jpg"
+            "price": "12.741,80 TL",
+            "unitPrice": "6.370,90 TL",
+            "productCode": "HBC1FD410C3B",
+            "url": "https://www.hepsiburada.com/urun-p-HBC7981077394",
+            "image": "examples/img/bilgisayar.svg"
           }
         ]
       }
     ],
     "payments": [
       {
-        "amount": "1.299,00 TL",
-        "method": "Kredi Kartı ile ödendi (Peşin)",
-        "card": "0000 00** **** 0000"
+        "amount": "12.741,80 TL",
+        "method": "Kredi Kartı ile ödendi (3 Taksit)",
+        "card": "5100 00** **** 2222"
       }
     ],
     "amounts": {
       "Kargo": "Bedava",
-      "Ürünler": "1.299,00 TL",
-      "Genel toplam": "1.299,00 TL"
+      "Ürünler": "12.741,80 TL",
+      "Genel toplam": "12.741,80 TL"
     },
     "campaigns": [],
     "items": [
       {
-        "name": "Örnek Kablosuz Kulaklık",
-        "quantity": 1,
-        "price": "999,00 TL",
-        "unitPrice": "999,00 TL",
-        "productCode": "HBV0000000001",
-        "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000001",
-        "image": "https://example.com/urun.jpg",
-        "seller": "Örnek Mağaza",
-        "deliveryStatus": "Teslim edildi",
-        "trackingCode": "10000000000001"
-      },
-      {
-        "name": "Örnek USB-C Kablo",
+        "name": "27 inç IPS Monitör 75 Hz",
         "quantity": 2,
-        "price": "300,00 TL",
-        "unitPrice": "150,00 TL",
-        "productCode": "HBV0000000002",
-        "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000002",
-        "image": "https://example.com/urun.jpg",
-        "seller": "Örnek Mağaza",
+        "price": "12.741,80 TL",
+        "unitPrice": "6.370,90 TL",
+        "productCode": "HBC1FD410C3B",
+        "url": "https://www.hepsiburada.com/urun-p-HBC7981077394",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Ekran Merkezi",
         "deliveryStatus": "Teslim edildi",
-        "trackingCode": "10000000000001"
+        "trackingCode": "10292932052116"
       }
     ]
   },
   {
-    "orderNo": "1000000002",
-    "status": "İptal edildi",
-    "date": "15 Eylül 2026",
-    "total": "249,90 TL",
+    "orderNo": "4391766764",
+    "status": "Sipariş tamamlandı",
+    "date": "12 Mayıs 2026",
+    "total": "294,80 TL",
     "address": {
       "label": "Ev",
-      "detail": "Örnek Mah. Deneme Sk. No:1 D:2",
-      "region": "Örnek Mah. Merkez / İstanbul",
-      "recipient": "Örnek Kişi"
+      "detail": "Caferağa Mah. Örnek Sk. No:47 D:3",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
     },
-    "shipments": [],
+    "shipments": [
+      {
+        "seller": "Kitap Diyarı",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "15 May Cum 2026, 15:38",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10045725684753",
+        "items": [
+          {
+            "name": "Python ile Programlamaya Giriş",
+            "quantity": 1,
+            "price": "246,90 TL",
+            "unitPrice": "246,90 TL",
+            "productCode": "HBC112380CF1",
+            "url": "https://www.hepsiburada.com/urun-p-HBC3698305085",
+            "image": "examples/img/kitap.svg"
+          }
+        ]
+      }
+    ],
     "payments": [
       {
-        "amount": "249,90 TL",
-        "method": "Kredi Kartı ile ödendi (Peşin)",
-        "card": "0000 00** **** 0000"
+        "amount": "294,80 TL",
+        "method": "Hepsipay cüzdan ile ödendi",
+        "card": "-"
       }
     ],
     "amounts": {
-      "Kargo": "Bedava",
-      "Ürünler": "249,90 TL",
-      "Genel toplam": "249,90 TL"
+      "Kargo": "47,90 TL",
+      "Ürünler": "246,90 TL",
+      "Genel toplam": "294,80 TL"
     },
     "campaigns": [],
     "items": [
       {
-        "name": "Örnek Telefon Kılıfı",
+        "name": "Python ile Programlamaya Giriş",
         "quantity": 1,
-        "price": "249,90 TL",
-        "unitPrice": "249,90 TL",
-        "productCode": "HBV0000000003",
-        "url": "https://www.hepsiburada.com/ornek-urun-p-HBV0000000003",
-        "image": "https://example.com/urun.jpg",
-        "seller": "Örnek Mağaza",
-        "deliveryStatus": "İptal edildi",
-        "trackingCode": "10000000000001"
+        "price": "246,90 TL",
+        "unitPrice": "246,90 TL",
+        "productCode": "HBC112380CF1",
+        "url": "https://www.hepsiburada.com/urun-p-HBC3698305085",
+        "image": "examples/img/kitap.svg",
+        "seller": "Kitap Diyarı",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10045725684753"
+      }
+    ]
+  },
+  {
+    "orderNo": "4698916441",
+    "status": "Sipariş tamamlandı",
+    "date": "02 Ocak 2026",
+    "total": "200,80 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:57 D:13",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Kablo Evi",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "04 Oca Paz 2026, 22:04",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10663596288927",
+        "items": [
+          {
+            "name": "USB-C - USB-C Örgülü Kablo 2 m",
+            "quantity": 1,
+            "price": "157,90 TL",
+            "unitPrice": "157,90 TL",
+            "productCode": "HBC18EDA2472",
+            "url": "https://www.hepsiburada.com/urun-p-HBC7573691558",
+            "image": "examples/img/elektronik.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "200,80 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "4000 00** **** 1111"
+      }
+    ],
+    "amounts": {
+      "Kargo": "42,90 TL",
+      "Ürünler": "157,90 TL",
+      "Genel toplam": "200,80 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "USB-C - USB-C Örgülü Kablo 2 m",
+        "quantity": 1,
+        "price": "157,90 TL",
+        "unitPrice": "157,90 TL",
+        "productCode": "HBC18EDA2472",
+        "url": "https://www.hepsiburada.com/urun-p-HBC7573691558",
+        "image": "examples/img/elektronik.svg",
+        "seller": "Kablo Evi",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10663596288927"
+      }
+    ]
+  },
+  {
+    "orderNo": "4490523712",
+    "status": "Sipariş tamamlandı",
+    "date": "04 Kasım 2025",
+    "total": "486,70 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Kazımdirik Mah. Örnek Sk. No:55 D:5",
+      "region": "Kazımdirik Mah. Bornova / İzmir",
+      "recipient": "Can Demir"
+    },
+    "shipments": [
+      {
+        "seller": "Kitap Diyarı",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "07 Kas Cum 2025, 15:31",
+        "receivedBy": "Can Demir",
+        "trackingCode": "10701364526954",
+        "items": [
+          {
+            "name": "Sapiens: İnsan Türünün Kısa Bir Tarihi",
+            "quantity": 1,
+            "price": "240,90 TL",
+            "unitPrice": "240,90 TL",
+            "productCode": "HBC2099738E0",
+            "url": "https://www.hepsiburada.com/urun-p-HBC9165632300",
+            "image": "examples/img/kitap.svg"
+          }
+        ]
+      },
+      {
+        "seller": "Kılıfçı",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "07 Kas Cum 2025, 15:31",
+        "receivedBy": "Can Demir",
+        "trackingCode": "10701364526954",
+        "items": [
+          {
+            "name": "Akıllı Telefon Şeffaf Silikon Kılıf",
+            "quantity": 2,
+            "price": "245,80 TL",
+            "unitPrice": "122,90 TL",
+            "productCode": "HBC14E836710",
+            "url": "https://www.hepsiburada.com/urun-p-HBC9354723429",
+            "image": "examples/img/telefon.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "486,70 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "5400 00** **** 4444"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "486,70 TL",
+      "Genel toplam": "486,70 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Sapiens: İnsan Türünün Kısa Bir Tarihi",
+        "quantity": 1,
+        "price": "240,90 TL",
+        "unitPrice": "240,90 TL",
+        "productCode": "HBC2099738E0",
+        "url": "https://www.hepsiburada.com/urun-p-HBC9165632300",
+        "image": "examples/img/kitap.svg",
+        "seller": "Kitap Diyarı",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10701364526954"
+      },
+      {
+        "name": "Akıllı Telefon Şeffaf Silikon Kılıf",
+        "quantity": 2,
+        "price": "245,80 TL",
+        "unitPrice": "122,90 TL",
+        "productCode": "HBC14E836710",
+        "url": "https://www.hepsiburada.com/urun-p-HBC9354723429",
+        "image": "examples/img/telefon.svg",
+        "seller": "Kılıfçı",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10701364526954"
+      }
+    ]
+  },
+  {
+    "orderNo": "4125279834",
+    "status": "Sipariş tamamlandı",
+    "date": "21 Ekim 2025",
+    "total": "1.984,70 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Kızılay Mah. Örnek Sk. No:9 D:1",
+      "region": "Kızılay Mah. Çankaya / Ankara",
+      "recipient": "Zeynep Kaya"
+    },
+    "shipments": [
+      {
+        "seller": "Kılıfçı",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "23 Eki Per 2025, 20:54",
+        "receivedBy": "Zeynep Kaya",
+        "trackingCode": "10772704936140",
+        "items": [
+          {
+            "name": "Akıllı Telefon Şeffaf Silikon Kılıf",
+            "quantity": 1,
+            "price": "110,90 TL",
+            "unitPrice": "110,90 TL",
+            "productCode": "HBC1CB532EE4",
+            "url": "https://www.hepsiburada.com/urun-p-HBC9861449701",
+            "image": "examples/img/telefon.svg"
+          }
+        ]
+      },
+      {
+        "seller": "TeknoDünya",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "23 Eki Per 2025, 20:54",
+        "receivedBy": "Zeynep Kaya",
+        "trackingCode": "10772704936140",
+        "items": [
+          {
+            "name": "Kablosuz Kulak İçi Bluetooth Kulaklık",
+            "quantity": 2,
+            "price": "1.873,80 TL",
+            "unitPrice": "936,90 TL",
+            "productCode": "HBC9AB3AF83",
+            "url": "https://www.hepsiburada.com/urun-p-HBC3898400928",
+            "image": "examples/img/elektronik.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "1.984,70 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "4200 00** **** 3333"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "1.984,70 TL",
+      "Genel toplam": "1.984,70 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Kablosuz Kulak İçi Bluetooth Kulaklık",
+        "quantity": 2,
+        "price": "1.873,80 TL",
+        "unitPrice": "936,90 TL",
+        "productCode": "HBC9AB3AF83",
+        "url": "https://www.hepsiburada.com/urun-p-HBC3898400928",
+        "image": "examples/img/elektronik.svg",
+        "seller": "TeknoDünya",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10772704936140"
+      },
+      {
+        "name": "Akıllı Telefon Şeffaf Silikon Kılıf",
+        "quantity": 1,
+        "price": "110,90 TL",
+        "unitPrice": "110,90 TL",
+        "productCode": "HBC1CB532EE4",
+        "url": "https://www.hepsiburada.com/urun-p-HBC9861449701",
+        "image": "examples/img/telefon.svg",
+        "seller": "Kılıfçı",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10772704936140"
+      }
+    ]
+  },
+  {
+    "orderNo": "4824024405",
+    "status": "Sipariş tamamlandı",
+    "date": "08 Ekim 2025",
+    "total": "1.887,70 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:53 D:10",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Hobi Atölyesi",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "10 Eki Cum 2025, 11:26",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10247278876628",
+        "items": [
+          {
+            "name": "Akrilik Boya Seti 24 Renk",
+            "quantity": 1,
+            "price": "281,90 TL",
+            "unitPrice": "281,90 TL",
+            "productCode": "HBC1574EFD32",
+            "url": "https://www.hepsiburada.com/urun-p-HBC2578662692",
+            "image": "examples/img/hobi.svg"
+          }
+        ]
+      },
+      {
+        "seller": "Oyuncak Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "10 Eki Cum 2025, 11:26",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10247278876628",
+        "items": [
+          {
+            "name": "Lego Classic Yaratıcı Yapım Kutusu",
+            "quantity": 2,
+            "price": "1.605,80 TL",
+            "unitPrice": "802,90 TL",
+            "productCode": "HBC18B9770B1",
+            "url": "https://www.hepsiburada.com/urun-p-HBC3179320310",
+            "image": "examples/img/oyuncak.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "1.887,70 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "5400 00** **** 4444"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "1.887,70 TL",
+      "Genel toplam": "1.887,70 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Lego Classic Yaratıcı Yapım Kutusu",
+        "quantity": 2,
+        "price": "1.605,80 TL",
+        "unitPrice": "802,90 TL",
+        "productCode": "HBC18B9770B1",
+        "url": "https://www.hepsiburada.com/urun-p-HBC3179320310",
+        "image": "examples/img/oyuncak.svg",
+        "seller": "Oyuncak Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10247278876628"
+      },
+      {
+        "name": "Akrilik Boya Seti 24 Renk",
+        "quantity": 1,
+        "price": "281,90 TL",
+        "unitPrice": "281,90 TL",
+        "productCode": "HBC1574EFD32",
+        "url": "https://www.hepsiburada.com/urun-p-HBC2578662692",
+        "image": "examples/img/hobi.svg",
+        "seller": "Hobi Atölyesi",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10247278876628"
+      }
+    ]
+  },
+  {
+    "orderNo": "4755797020",
+    "status": "Sipariş tamamlandı",
+    "date": "04 Temmuz 2025",
+    "total": "649,70 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:56 D:2",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Kitap Diyarı",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "07 Tem Pzt 2025, 20:41",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10477129546141",
+        "items": [
+          {
+            "name": "Sapiens: İnsan Türünün Kısa Bir Tarihi",
+            "quantity": 1,
+            "price": "225,90 TL",
+            "unitPrice": "225,90 TL",
+            "productCode": "HBC2275CCC6F",
+            "url": "https://www.hepsiburada.com/urun-p-HBC5283911723",
+            "image": "examples/img/kitap.svg"
+          }
+        ]
+      },
+      {
+        "seller": "Oto Aksesuar",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "07 Tem Pzt 2025, 20:41",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10477129546141",
+        "items": [
+          {
+            "name": "Araç İçi Manyetik Telefon Tutucu",
+            "quantity": 2,
+            "price": "423,80 TL",
+            "unitPrice": "211,90 TL",
+            "productCode": "HBCC61AD08D",
+            "url": "https://www.hepsiburada.com/urun-p-HBC3651968205",
+            "image": "examples/img/telefon.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "649,70 TL",
+        "method": "Kredi Kartı ile ödendi (3 Taksit)",
+        "card": "4000 00** **** 1111"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "649,70 TL",
+      "Genel toplam": "649,70 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Araç İçi Manyetik Telefon Tutucu",
+        "quantity": 2,
+        "price": "423,80 TL",
+        "unitPrice": "211,90 TL",
+        "productCode": "HBCC61AD08D",
+        "url": "https://www.hepsiburada.com/urun-p-HBC3651968205",
+        "image": "examples/img/telefon.svg",
+        "seller": "Oto Aksesuar",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10477129546141"
+      },
+      {
+        "name": "Sapiens: İnsan Türünün Kısa Bir Tarihi",
+        "quantity": 1,
+        "price": "225,90 TL",
+        "unitPrice": "225,90 TL",
+        "productCode": "HBC2275CCC6F",
+        "url": "https://www.hepsiburada.com/urun-p-HBC5283911723",
+        "image": "examples/img/kitap.svg",
+        "seller": "Kitap Diyarı",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10477129546141"
+      }
+    ]
+  },
+  {
+    "orderNo": "4487098457",
+    "status": "Sipariş tamamlandı",
+    "date": "05 Haziran 2025",
+    "total": "271,80 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:22 D:3",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Hobi Atölyesi",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "08 Haz Paz 2025, 16:01",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10098915919054",
+        "items": [
+          {
+            "name": "Akrilik Boya Seti 24 Renk",
+            "quantity": 1,
+            "price": "235,90 TL",
+            "unitPrice": "235,90 TL",
+            "productCode": "HBC1E3E286E7",
+            "url": "https://www.hepsiburada.com/urun-p-HBC1298867122",
+            "image": "examples/img/hobi.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "271,80 TL",
+        "method": "Kredi Kartı ile ödendi (3 Taksit)",
+        "card": "5100 00** **** 2222"
+      }
+    ],
+    "amounts": {
+      "Kargo": "35,90 TL",
+      "Ürünler": "235,90 TL",
+      "Genel toplam": "271,80 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Akrilik Boya Seti 24 Renk",
+        "quantity": 1,
+        "price": "235,90 TL",
+        "unitPrice": "235,90 TL",
+        "productCode": "HBC1E3E286E7",
+        "url": "https://www.hepsiburada.com/urun-p-HBC1298867122",
+        "image": "examples/img/hobi.svg",
+        "seller": "Hobi Atölyesi",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10098915919054"
+      }
+    ]
+  },
+  {
+    "orderNo": "4639930411",
+    "status": "Sipariş tamamlandı",
+    "date": "11 Mayıs 2025",
+    "total": "487,80 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:1 D:5",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Spor Merkezi",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "12 May Pzt 2025, 08:03",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10851814677126",
+        "items": [
+          {
+            "name": "Yoga Matı 6 mm",
+            "quantity": 2,
+            "price": "487,80 TL",
+            "unitPrice": "243,90 TL",
+            "productCode": "HBCC97B59C2",
+            "url": "https://www.hepsiburada.com/urun-p-HBC3518496186",
+            "image": "examples/img/spor.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "487,80 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "5100 00** **** 2222"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "487,80 TL",
+      "Genel toplam": "487,80 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Yoga Matı 6 mm",
+        "quantity": 2,
+        "price": "487,80 TL",
+        "unitPrice": "243,90 TL",
+        "productCode": "HBCC97B59C2",
+        "url": "https://www.hepsiburada.com/urun-p-HBC3518496186",
+        "image": "examples/img/spor.svg",
+        "seller": "Spor Merkezi",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10851814677126"
+      }
+    ]
+  },
+  {
+    "orderNo": "4839156387",
+    "status": "Sipariş tamamlandı",
+    "date": "15 Ekim 2024",
+    "total": "636,90 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Kızılay Mah. Örnek Sk. No:17 D:6",
+      "region": "Kızılay Mah. Çankaya / Ankara",
+      "recipient": "Zeynep Kaya"
+    },
+    "shipments": [
+      {
+        "seller": "Oyuncak Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "18 Eki Cum 2024, 09:08",
+        "receivedBy": "Zeynep Kaya",
+        "trackingCode": "10447295741582",
+        "items": [
+          {
+            "name": "Lego Classic Yaratıcı Yapım Kutusu",
+            "quantity": 1,
+            "price": "636,90 TL",
+            "unitPrice": "636,90 TL",
+            "productCode": "HBCAC52B268",
+            "url": "https://www.hepsiburada.com/urun-p-HBC2962491159",
+            "image": "examples/img/oyuncak.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "636,90 TL",
+        "method": "Hepsipay cüzdan ile ödendi",
+        "card": "-"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "636,90 TL",
+      "Genel toplam": "636,90 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Lego Classic Yaratıcı Yapım Kutusu",
+        "quantity": 1,
+        "price": "636,90 TL",
+        "unitPrice": "636,90 TL",
+        "productCode": "HBCAC52B268",
+        "url": "https://www.hepsiburada.com/urun-p-HBC2962491159",
+        "image": "examples/img/oyuncak.svg",
+        "seller": "Oyuncak Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10447295741582"
+      }
+    ]
+  },
+  {
+    "orderNo": "4457707813",
+    "status": "Sipariş tamamlandı",
+    "date": "06 Eylül 2024",
+    "total": "356,70 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:44 D:2",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Ev Çözüm",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "09 Eyl Pzt 2024, 22:49",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10034205232011",
+        "items": [
+          {
+            "name": "Vakumlu Saklama Torbası 6'lı",
+            "quantity": 2,
+            "price": "331,80 TL",
+            "unitPrice": "165,90 TL",
+            "productCode": "HBCD9126E5E",
+            "url": "https://www.hepsiburada.com/urun-p-HBC6590459705",
+            "image": "examples/img/ev.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "356,70 TL",
+        "method": "Kredi Kartı ile ödendi (3 Taksit)",
+        "card": "5400 00** **** 4444"
+      }
+    ],
+    "amounts": {
+      "Kargo": "24,90 TL",
+      "Ürünler": "331,80 TL",
+      "Genel toplam": "356,70 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Vakumlu Saklama Torbası 6'lı",
+        "quantity": 2,
+        "price": "331,80 TL",
+        "unitPrice": "165,90 TL",
+        "productCode": "HBCD9126E5E",
+        "url": "https://www.hepsiburada.com/urun-p-HBC6590459705",
+        "image": "examples/img/ev.svg",
+        "seller": "Ev Çözüm",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10034205232011"
+      }
+    ]
+  },
+  {
+    "orderNo": "4545179180",
+    "status": "Sipariş tamamlandı",
+    "date": "29 Ağustos 2024",
+    "total": "391,70 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Kızılay Mah. Örnek Sk. No:18 D:14",
+      "region": "Kızılay Mah. Çankaya / Ankara",
+      "recipient": "Zeynep Kaya"
+    },
+    "shipments": [
+      {
+        "seller": "Hobi Atölyesi",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "31 Ağu Cmt 2024, 15:29",
+        "receivedBy": "Zeynep Kaya",
+        "trackingCode": "10870902008220",
+        "items": [
+          {
+            "name": "Akrilik Boya Seti 24 Renk",
+            "quantity": 2,
+            "price": "363,80 TL",
+            "unitPrice": "181,90 TL",
+            "productCode": "HBC11CB6508D",
+            "url": "https://www.hepsiburada.com/urun-p-HBC4710967433",
+            "image": "examples/img/hobi.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "391,70 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "4200 00** **** 3333"
+      }
+    ],
+    "amounts": {
+      "Kargo": "27,90 TL",
+      "Ürünler": "363,80 TL",
+      "Genel toplam": "391,70 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Akrilik Boya Seti 24 Renk",
+        "quantity": 2,
+        "price": "363,80 TL",
+        "unitPrice": "181,90 TL",
+        "productCode": "HBC11CB6508D",
+        "url": "https://www.hepsiburada.com/urun-p-HBC4710967433",
+        "image": "examples/img/hobi.svg",
+        "seller": "Hobi Atölyesi",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10870902008220"
+      }
+    ]
+  },
+  {
+    "orderNo": "4597398528",
+    "status": "Sipariş tamamlandı",
+    "date": "03 Haziran 2024",
+    "total": "1.350,70 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:4 D:10",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Işık Evi",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "05 Haz Çar 2024, 22:56",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10816458527301",
+        "items": [
+          {
+            "name": "LED Masa Lambası Dokunmatik",
+            "quantity": 1,
+            "price": "280,90 TL",
+            "unitPrice": "280,90 TL",
+            "productCode": "HBCB50468D2",
+            "url": "https://www.hepsiburada.com/urun-p-HBC1366637148",
+            "image": "examples/img/ev.svg"
+          }
+        ]
+      },
+      {
+        "seller": "Tekstil Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "05 Haz Çar 2024, 22:56",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10816458527301",
+        "items": [
+          {
+            "name": "Pamuklu Çift Kişilik Nevresim Takımı",
+            "quantity": 2,
+            "price": "1.069,80 TL",
+            "unitPrice": "534,90 TL",
+            "productCode": "HBC1A8DB31F4",
+            "url": "https://www.hepsiburada.com/urun-p-HBC8151583833",
+            "image": "examples/img/ev.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "1.350,70 TL",
+        "method": "Kredi Kartı ile ödendi (3 Taksit)",
+        "card": "4200 00** **** 3333"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "1.350,70 TL",
+      "Genel toplam": "1.350,70 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Pamuklu Çift Kişilik Nevresim Takımı",
+        "quantity": 2,
+        "price": "1.069,80 TL",
+        "unitPrice": "534,90 TL",
+        "productCode": "HBC1A8DB31F4",
+        "url": "https://www.hepsiburada.com/urun-p-HBC8151583833",
+        "image": "examples/img/ev.svg",
+        "seller": "Tekstil Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10816458527301"
+      },
+      {
+        "name": "LED Masa Lambası Dokunmatik",
+        "quantity": 1,
+        "price": "280,90 TL",
+        "unitPrice": "280,90 TL",
+        "productCode": "HBCB50468D2",
+        "url": "https://www.hepsiburada.com/urun-p-HBC1366637148",
+        "image": "examples/img/ev.svg",
+        "seller": "Işık Evi",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10816458527301"
+      }
+    ]
+  },
+  {
+    "orderNo": "4800122509",
+    "status": "Sipariş tamamlandı",
+    "date": "02 Mart 2024",
+    "total": "209,80 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:32 D:14",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Outdoor Life",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "04 Mar Pzt 2024, 23:06",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10618510071124",
+        "items": [
+          {
+            "name": "Paslanmaz Çelik Termos 500 ml",
+            "quantity": 1,
+            "price": "186,90 TL",
+            "unitPrice": "186,90 TL",
+            "productCode": "HBC872F0830",
+            "url": "https://www.hepsiburada.com/urun-p-HBC8122042835",
+            "image": "examples/img/mutfak.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "209,80 TL",
+        "method": "Kredi Kartı ile ödendi (3 Taksit)",
+        "card": "4000 00** **** 1111"
+      }
+    ],
+    "amounts": {
+      "Kargo": "22,90 TL",
+      "Ürünler": "186,90 TL",
+      "Genel toplam": "209,80 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Paslanmaz Çelik Termos 500 ml",
+        "quantity": 1,
+        "price": "186,90 TL",
+        "unitPrice": "186,90 TL",
+        "productCode": "HBC872F0830",
+        "url": "https://www.hepsiburada.com/urun-p-HBC8122042835",
+        "image": "examples/img/mutfak.svg",
+        "seller": "Outdoor Life",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10618510071124"
+      }
+    ]
+  },
+  {
+    "orderNo": "4444726404",
+    "status": "Sipariş tamamlandı",
+    "date": "05 Ekim 2023",
+    "total": "930,90 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Kazımdirik Mah. Örnek Sk. No:18 D:4",
+      "region": "Kazımdirik Mah. Bornova / İzmir",
+      "recipient": "Can Demir"
+    },
+    "shipments": [
+      {
+        "seller": "Oyuncu Dükkanı",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "07 Eki Cmt 2023, 18:49",
+        "receivedBy": "Can Demir",
+        "trackingCode": "10466699473017",
+        "items": [
+          {
+            "name": "Mekanik Klavye TR Q Kırmızı Switch",
+            "quantity": 1,
+            "price": "930,90 TL",
+            "unitPrice": "930,90 TL",
+            "productCode": "HBC248580603",
+            "url": "https://www.hepsiburada.com/urun-p-HBC5645357285",
+            "image": "examples/img/bilgisayar.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "930,90 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "5400 00** **** 4444"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "930,90 TL",
+      "Genel toplam": "930,90 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Mekanik Klavye TR Q Kırmızı Switch",
+        "quantity": 1,
+        "price": "930,90 TL",
+        "unitPrice": "930,90 TL",
+        "productCode": "HBC248580603",
+        "url": "https://www.hepsiburada.com/urun-p-HBC5645357285",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Oyuncu Dükkanı",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10466699473017"
+      }
+    ]
+  },
+  {
+    "orderNo": "4300368694",
+    "status": "Sipariş tamamlandı",
+    "date": "20 Eylül 2023",
+    "total": "430,90 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:3 D:12",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Tekstil Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "22 Eyl Cum 2023, 23:07",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10110187050550",
+        "items": [
+          {
+            "name": "Pamuklu Çift Kişilik Nevresim Takımı",
+            "quantity": 1,
+            "price": "430,90 TL",
+            "unitPrice": "430,90 TL",
+            "productCode": "HBC1C5E4D82D",
+            "url": "https://www.hepsiburada.com/urun-p-HBC4120719599",
+            "image": "examples/img/ev.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "430,90 TL",
+        "method": "Kredi Kartı ile ödendi (3 Taksit)",
+        "card": "5400 00** **** 4444"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "430,90 TL",
+      "Genel toplam": "430,90 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Pamuklu Çift Kişilik Nevresim Takımı",
+        "quantity": 1,
+        "price": "430,90 TL",
+        "unitPrice": "430,90 TL",
+        "productCode": "HBC1C5E4D82D",
+        "url": "https://www.hepsiburada.com/urun-p-HBC4120719599",
+        "image": "examples/img/ev.svg",
+        "seller": "Tekstil Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10110187050550"
+      }
+    ]
+  },
+  {
+    "orderNo": "4871243675",
+    "status": "Sipariş tamamlandı",
+    "date": "07 Ağustos 2023",
+    "total": "1.287,80 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Kazımdirik Mah. Örnek Sk. No:25 D:7",
+      "region": "Kazımdirik Mah. Bornova / İzmir",
+      "recipient": "Can Demir"
+    },
+    "shipments": [
+      {
+        "seller": "Oyuncak Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "09 Ağu Çar 2023, 17:53",
+        "receivedBy": "Can Demir",
+        "trackingCode": "10348079814698",
+        "items": [
+          {
+            "name": "Lego Classic Yaratıcı Yapım Kutusu",
+            "quantity": 1,
+            "price": "387,90 TL",
+            "unitPrice": "387,90 TL",
+            "productCode": "HBC193F4D4FA",
+            "url": "https://www.hepsiburada.com/urun-p-HBC7628981661",
+            "image": "examples/img/oyuncak.svg"
+          }
+        ]
+      },
+      {
+        "seller": "Oyuncu Dükkanı",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "09 Ağu Çar 2023, 17:53",
+        "receivedBy": "Can Demir",
+        "trackingCode": "10348079814698",
+        "items": [
+          {
+            "name": "Mekanik Klavye TR Q Kırmızı Switch",
+            "quantity": 1,
+            "price": "899,90 TL",
+            "unitPrice": "899,90 TL",
+            "productCode": "HBC11A390157",
+            "url": "https://www.hepsiburada.com/urun-p-HBC2644847276",
+            "image": "examples/img/bilgisayar.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "1.287,80 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "5400 00** **** 4444"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "1.287,80 TL",
+      "Genel toplam": "1.287,80 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Lego Classic Yaratıcı Yapım Kutusu",
+        "quantity": 1,
+        "price": "387,90 TL",
+        "unitPrice": "387,90 TL",
+        "productCode": "HBC193F4D4FA",
+        "url": "https://www.hepsiburada.com/urun-p-HBC7628981661",
+        "image": "examples/img/oyuncak.svg",
+        "seller": "Oyuncak Dünyası",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10348079814698"
+      },
+      {
+        "name": "Mekanik Klavye TR Q Kırmızı Switch",
+        "quantity": 1,
+        "price": "899,90 TL",
+        "unitPrice": "899,90 TL",
+        "productCode": "HBC11A390157",
+        "url": "https://www.hepsiburada.com/urun-p-HBC2644847276",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Oyuncu Dükkanı",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10348079814698"
+      }
+    ]
+  },
+  {
+    "orderNo": "4227746886",
+    "status": "Sipariş tamamlandı",
+    "date": "25 Mart 2023",
+    "total": "84,25 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:42 D:11",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Okur Kitabevi",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "26 Mar Paz 2023, 22:28",
+        "receivedBy": "Elif Yılmaz",
+        "trackingCode": "10137302403040",
+        "items": [
+          {
+            "name": "Atomik Alışkanlıklar",
+            "quantity": 1,
+            "price": "67,90 TL",
+            "unitPrice": "67,90 TL",
+            "productCode": "HBC976CD698",
+            "url": "https://www.hepsiburada.com/urun-p-HBC7004964045",
+            "image": "examples/img/kitap.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "84,25 TL",
+        "method": "Hepsipay cüzdan ile ödendi",
+        "card": "-"
+      }
+    ],
+    "amounts": {
+      "Kargo": "16,35 TL",
+      "Ürünler": "67,90 TL",
+      "Genel toplam": "84,25 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Atomik Alışkanlıklar",
+        "quantity": 1,
+        "price": "67,90 TL",
+        "unitPrice": "67,90 TL",
+        "productCode": "HBC976CD698",
+        "url": "https://www.hepsiburada.com/urun-p-HBC7004964045",
+        "image": "examples/img/kitap.svg",
+        "seller": "Okur Kitabevi",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10137302403040"
+      }
+    ]
+  },
+  {
+    "orderNo": "4935056899",
+    "status": "Sipariş tamamlandı",
+    "date": "11 Aralık 2022",
+    "total": "48,92 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:25 D:10",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Kılıfçı",
+        "deliveryStatus": "İade işlemi tamamlandı",
+        "deliveryDate": "-",
+        "receivedBy": "-",
+        "trackingCode": "10870511704083",
+        "items": [
+          {
+            "name": "Temperli Cam Ekran Koruyucu 2'li",
+            "quantity": 1,
+            "price": "35,90 TL",
+            "unitPrice": "35,90 TL",
+            "productCode": "HBC60DED9E0",
+            "url": "https://www.hepsiburada.com/urun-p-HBC7576309274",
+            "image": "examples/img/telefon.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "48,92 TL",
+        "method": "Hepsipay cüzdan ile ödendi",
+        "card": "-"
+      }
+    ],
+    "amounts": {
+      "Kargo": "13,02 TL",
+      "Ürünler": "35,90 TL",
+      "Genel toplam": "48,92 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Temperli Cam Ekran Koruyucu 2'li",
+        "quantity": 1,
+        "price": "35,90 TL",
+        "unitPrice": "35,90 TL",
+        "productCode": "HBC60DED9E0",
+        "url": "https://www.hepsiburada.com/urun-p-HBC7576309274",
+        "image": "examples/img/telefon.svg",
+        "seller": "Kılıfçı",
+        "deliveryStatus": "İade işlemi tamamlandı",
+        "trackingCode": "10870511704083"
+      }
+    ]
+  },
+  {
+    "orderNo": "4452002959",
+    "status": "İptal edildi",
+    "date": "28 Eylül 2022",
+    "total": "598,90 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:34 D:2",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Elif Yılmaz"
+    },
+    "shipments": [],
+    "payments": [
+      {
+        "amount": "598,90 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "4000 00** **** 1111"
+      }
+    ],
+    "amounts": {
+      "Kargo": "Bedava",
+      "Ürünler": "598,90 TL",
+      "Genel toplam": "598,90 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Mekanik Klavye TR Q Kırmızı Switch",
+        "quantity": 1,
+        "price": "598,90 TL",
+        "unitPrice": "598,90 TL",
+        "productCode": "HBC10571703B",
+        "url": "https://www.hepsiburada.com/urun-p-HBC7824071339",
+        "image": "examples/img/bilgisayar.svg",
+        "seller": "Oyuncu Dükkanı",
+        "deliveryStatus": "Bu ürün iptal edildi.",
+        "trackingCode": "10288511190574"
+      }
+    ]
+  },
+  {
+    "orderNo": "4293587744",
+    "status": "Sipariş tamamlandı",
+    "date": "10 Eylül 2022",
+    "total": "73,61 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Kazımdirik Mah. Örnek Sk. No:27 D:14",
+      "region": "Kazımdirik Mah. Bornova / İzmir",
+      "recipient": "Can Demir"
+    },
+    "shipments": [
+      {
+        "seller": "Kılıfçı",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "11 Eyl Paz 2022, 08:40",
+        "receivedBy": "Can Demir",
+        "trackingCode": "10917609925971",
+        "items": [
+          {
+            "name": "Temperli Cam Ekran Koruyucu 2'li",
+            "quantity": 2,
+            "price": "61,80 TL",
+            "unitPrice": "30,90 TL",
+            "productCode": "HBCA40CDDF9",
+            "url": "https://www.hepsiburada.com/urun-p-HBC5782279101",
+            "image": "examples/img/telefon.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "73,61 TL",
+        "method": "Kredi Kartı ile ödendi (3 Taksit)",
+        "card": "4200 00** **** 3333"
+      }
+    ],
+    "amounts": {
+      "Kargo": "11,81 TL",
+      "Ürünler": "61,80 TL",
+      "Genel toplam": "73,61 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Temperli Cam Ekran Koruyucu 2'li",
+        "quantity": 2,
+        "price": "61,80 TL",
+        "unitPrice": "30,90 TL",
+        "productCode": "HBCA40CDDF9",
+        "url": "https://www.hepsiburada.com/urun-p-HBC5782279101",
+        "image": "examples/img/telefon.svg",
+        "seller": "Kılıfçı",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10917609925971"
+      }
+    ]
+  },
+  {
+    "orderNo": "4080852074",
+    "status": "Sipariş tamamlandı",
+    "date": "08 Temmuz 2022",
+    "total": "201,21 TL",
+    "address": {
+      "label": "Ev",
+      "detail": "Caferağa Mah. Örnek Sk. No:10 D:13",
+      "region": "Caferağa Mah. Kadıköy / İstanbul",
+      "recipient": "Mehmet Yılmaz"
+    },
+    "shipments": [
+      {
+        "seller": "Spor Merkezi",
+        "deliveryStatus": "Teslim edildi",
+        "deliveryDate": "10 Tem Paz 2022, 17:20",
+        "receivedBy": "Mehmet Yılmaz",
+        "trackingCode": "10956689187686",
+        "items": [
+          {
+            "name": "Yoga Matı 6 mm",
+            "quantity": 2,
+            "price": "189,80 TL",
+            "unitPrice": "94,90 TL",
+            "productCode": "HBC165BA5F5A",
+            "url": "https://www.hepsiburada.com/urun-p-HBC9350223102",
+            "image": "examples/img/spor.svg"
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "amount": "201,21 TL",
+        "method": "Kredi Kartı ile ödendi (Peşin)",
+        "card": "4000 00** **** 1111"
+      }
+    ],
+    "amounts": {
+      "Kargo": "11,41 TL",
+      "Ürünler": "189,80 TL",
+      "Genel toplam": "201,21 TL"
+    },
+    "campaigns": [],
+    "items": [
+      {
+        "name": "Yoga Matı 6 mm",
+        "quantity": 2,
+        "price": "189,80 TL",
+        "unitPrice": "94,90 TL",
+        "productCode": "HBC165BA5F5A",
+        "url": "https://www.hepsiburada.com/urun-p-HBC9350223102",
+        "image": "examples/img/spor.svg",
+        "seller": "Spor Merkezi",
+        "deliveryStatus": "Teslim edildi",
+        "trackingCode": "10956689187686"
       }
     ]
   }
