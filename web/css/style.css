@@ -97,6 +97,7 @@ a { color: var(--accent); }
 .summary-line { font-size: 20px; line-height: 1.6; margin: 0 0 16px; color: #c3c9ce; }
 .summary-line .hl { color: var(--accent); }
 .rate-note { margin: 12px 0 0; }
+.temu-line { margin: 14px 0 0; }
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
 .tile { background: var(--panel-2); border-radius: 8px; padding: 12px 14px; }
 .tile-k { color: var(--muted); font-size: 13px; }

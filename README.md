@@ -76,7 +76,12 @@ Denemek için `examples/` klasörünü seç: klasörde gerçek dosya yoksa örne
 - **Banka:** yalnız site veriyorsa görünür (şu an yalnız Trendyol). Diğerlerinde `—`; kartsız ödemede yöntem yazılır (Hepsipay, Trendyol Cüzdan, Hediye çeki).
 - **Dolar:** alış gününün USD/TRY kuru, [Frankfurter](https://frankfurter.dev) (açık kaynak API, Avrupa Merkez Bankası referans kuru; hafta sonu ve tatilde önceki iş günü). API'ye yalnız tarih aralığı gönderilir, kurlar tarayıcıda (`localStorage`) saklanır. Bankanın uyguladığı kurdan farklıdır ve API hatalı/eksik dönebilir: **dolar tutarları yaklaşıktır.** API'ye ulaşılamazsa dolar sütunları boş kalır.
 - **Fiyatı olmayan ürün:** sipariş tek ürünlüyse sipariş toplamı kullanılır ve `≈` ile işaretlenir.
-- **Temu:** sipariş toplamı (ithalat vergisi ve kupon dahil) ürünlere satır tutarıyla orantılı dağıtılır; iade de aynı şekilde. Ürün başına tutar bu yüzden çıkarımdır. Tamamı iade edilen ürün iade sayılır, kısmi iade tutarı düşer.
+- **Temu:** ürün satırları gümrük (ithalat) vergisini içermez, sipariş toplamı içerir. Panel ürün başına şunları gösterir (tabloda **Gümrük** ve **İade** sütunları, ayrıntıda hepsi; özet satırının altında Temu toplamı):
+  - **Gümrük vergisi:** siparişte ödenen ithalat vergisi, ürünlere satır tutarı oranında.
+  - **Ödenen:** sipariş toplamının ürün payı (vergi dahil, kupon/kredi sonrası).
+  - **İade:** Temu'nun iade kayıtları (vergi iadesi dahil), kaydın kapsadığı ürünlere ödenen oranında; kaydı olmayan iade (ör. iptal sipariş) siparişin tüm ürünlerine.
+  - **Net = Ödenen − İade.** Harcamaya net girer; tamamı iade edilen ürün iade sayılır, kısmi iadede net düşer.
+  - Dağıtımlar çıkarımdır. "Fiyat ayarlaması" iadelerinin tutarı Temu verisinde yok; bu ürünlerin neti fazla görünebilir.
 
 **Yapı**
 

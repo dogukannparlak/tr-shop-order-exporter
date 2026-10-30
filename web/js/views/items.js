@@ -2,6 +2,7 @@
 (function (SD) {
   const { h } = SD;
   const STATE = { ok: 'Harcama', iade: 'İade', iptal: 'İptal' };
+  const hasTemu = rows => rows.some(r => r.paid != null);
 
   function detail(dialog, it) {
     const row = (k, v) => (v == null || v === '' ? null : h('tr', {}, h('th', {}, k), h('td', {}, v)));
@@ -16,9 +17,12 @@
         row('Alıcı', it.recipient),
         row('Adet', it.qty),
         row('Birim fiyat', SD.fmtTL(it.unit)),
-        row('Tutar', (it.estimated ? '≈ ' : '') + SD.fmtTL(it.total)),
-        it.tax ? row('Vergi/kupon payı (çıkarım)', SD.fmtTL(it.tax)) : null,
-        it.refund ? row('İade payı (çıkarım)', SD.fmtTL(it.refund)) : null,
+        it.paid == null ? row('Tutar', (it.estimated ? '≈ ' : '') + SD.fmtTL(it.total)) : null,
+        it.paid != null ? row('Ürün tutarı', SD.fmtTL(it.line)) : null,
+        it.paid != null ? row('Gümrük vergisi (pay)', SD.fmtTL(it.tax)) : null,
+        it.paid != null ? row('Ödenen (pay, vergi dahil)', SD.fmtTL(it.paid)) : null,
+        it.paid != null ? row('İade (pay, vergi dahil)', it.refund ? SD.fmtTL(it.refund) : '—') : null,
+        it.paid != null ? row('Net', SD.fmtTL(it.net)) : null,
         row('Dolar', it.usd != null ? SD.fmtUSD(it.usd) : null),
         row('Kur (USD/TRY)', it.rate ? it.rate.toFixed(4).replace('.', ',') : null),
         row('Banka', it.bank),
@@ -51,6 +55,8 @@
         { key: 'recipient', label: 'Alıcı' },
         { key: 'category', label: 'Kategori' },
         { key: 'qty', label: 'Adet', num: true },
+        { key: 'tax', label: 'Gümrük', num: true, cls: 'nowrap', when: hasTemu, render: it => (it.tax ? SD.fmtTL(it.tax) : '—') },
+        { key: 'refund', label: 'İade', num: true, cls: 'nowrap', when: hasTemu, render: it => (it.refund ? SD.fmtTL(it.refund) : '—') },
         { key: 'total', label: 'Tutar', num: true, cls: 'nowrap', render: it => (it.estimated ? '≈ ' : '') + SD.fmtTL(it.total) },
         { key: 'usd', label: 'Dolar', num: true, cls: 'nowrap', fmt: SD.fmtUSD },
         { key: 'bank', label: 'Banka', cls: 'nowrap' },

@@ -1,5 +1,6 @@
 // Filtrelenebilir, sıralanabilir tablo bileşeni: arama kutusu + tek seçmeli filtre + Temizle + "n / m" sayacı.
 // Kullanım: const t = SD.table({ columns, unit, filterKey, filterLabel, pageSize, onRow }); t.el'i yerleştir, t.update(rows) çağır.
+// Sütunda when(rows) varsa sütun yalnız true dönünce görünür (ör. yalnız Temu satırlarında olan Gümrük/İade).
 (function (SD) {
   const { h } = SD;
 
@@ -24,8 +25,10 @@
     select?.addEventListener('change', () => { sel = select.value; page = 0; render(); });
     clear.addEventListener('click', () => { q = sel = ''; search.value = ''; if (select) select.value = ''; page = 0; render(); });
 
+    const visible = () => columns.filter(c => !c.when || c.when(rows));
+
     function header() {
-      thead.replaceChildren(h('tr', {}, columns.map(c => {
+      thead.replaceChildren(h('tr', {}, visible().map(c => {
         const active = sortKey === c.key;
         return h('th', {
           class: [c.num && 'num', c.sortable !== false && 'sortable', active && 'active'].filter(Boolean).join(' '),
@@ -64,13 +67,13 @@
       const shown = pageSize ? list.slice(page * pageSize, (page + 1) * pageSize) : list;
       tbody.replaceChildren(...shown.map(r => {
         const tr = h('tr', { class: onRow ? 'clickable' : null, onclick: onRow ? () => onRow(r) : null },
-          columns.map(c => {
+          visible().map(c => {
             const v = c.render ? c.render(r) : (c.fmt ? c.fmt(r[c.key]) : r[c.key] ?? '—');
             return h('td', { class: [c.num && 'num', c.cls].filter(Boolean).join(' ') || null }, v);
           }));
         return tr;
       }));
-      if (!shown.length) tbody.append(h('tr', {}, h('td', { colspan: columns.length, class: 'empty' }, 'Sonuç yok')));
+      if (!shown.length) tbody.append(h('tr', {}, h('td', { colspan: visible().length, class: 'empty' }, 'Sonuç yok')));
       pager.replaceChildren();
       if (pages > 1) {
         const btn = (txt, p, dis) => h('button', { class: 'tb-btn', type: 'button', disabled: dis, onclick: () => { page = p; render(); } }, txt);
