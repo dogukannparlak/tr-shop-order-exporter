@@ -10,21 +10,30 @@ const fmtTR = n => n == null ? '-' : n.toLocaleString('tr-TR', { minimumFraction
 
 // ---- AYAR: hangi siparişler alınsın? Sayfada çıkan kutudan seçilir ----
 // Kutuyu atlamak için yapıştırmadan önce window.RANGE = { months, from, to, last } tanımla (hepsi null = tüm siparişler).
+// Site renkleri: başlık şeridi, düğme/seçili renk, özet zemini
+const THEMES = {
+  'Hepsiburada': { head: '#ff6000', headText: '#fff', accent: '#ff6000', accentText: '#fff', tint: '#fff0e6' },
+  'Trendyol': { head: '#f27a1a', headText: '#fff', accent: '#f27a1a', accentText: '#fff', tint: '#fff1e4' },
+  'Trendyol Milla': { head: '#111', headText: '#fff', accent: '#e0488a', accentText: '#fff', tint: '#fdebf3' },
+  'Amazon TR': { head: '#131921', headText: '#fff', accent: '#ff9900', accentText: '#111', tint: '#fff3dc' },
+  'Temu': { head: '#fb7701', headText: '#fff', accent: '#fb7701', accentText: '#fff', tint: '#fff0e1' },
+};
 const askRange = site => window.RANGE ? Promise.resolve(window.RANGE) : new Promise(resolve => {
   document.getElementById('range-panel')?.remove();
+  const T = THEMES[site];
   const p = document.createElement('div');
   p.id = 'range-panel';
-  p.style.cssText = 'position:fixed;left:50%;top:15%;transform:translateX(-50%);z-index:999999;background:#fff;color:#222;padding:20px 22px;border-radius:12px;font:14px/1.5 system-ui,sans-serif;width:340px;box-shadow:0 10px 40px #0006';
+  p.style.cssText = 'position:fixed;left:50%;top:15%;transform:translateX(-50%);z-index:999999;background:#fff;color:#222;overflow:hidden;border-radius:12px;font:14px/1.5 system-ui,sans-serif;width:340px;box-shadow:0 10px 40px #0006';
   const chip = 'padding:8px 4px;border:1px solid #bbb;border-radius:8px;background:#f5f5f5;color:#222;font:inherit;cursor:pointer';
   const fld = 'width:100%;box-sizing:border-box;margin:2px 0 10px;padding:7px;font:inherit;border:1px solid #bbb;border-radius:6px';
   const MODES = [['all', 'Tümü'], ['1', 'Son 1 ay'], ['3', 'Son 3 ay'], ['6', 'Son 6 ay'], ['12', 'Son 1 yıl'], ['custom', 'Tarih aralığı'], ['last', 'Son N sipariş']];
-  p.innerHTML = `<div style="font-size:16px;font-weight:600">${site}: hangi siparişler indirilsin?</div>
-    <div style="color:#666;margin:2px 0 12px">Bir seçenek seç, sonra <b>İndirmeyi başlat</b>'a bas.</div>
+  p.innerHTML = `<div style="background:${T.head};color:${T.headText};padding:14px 22px;font-size:16px;font-weight:600">${site}: hangi siparişler indirilsin?</div>
+    <div style="padding:16px 22px 20px"><div style="color:#666;margin-bottom:12px">Bir seçenek seç, sonra <b>İndirmeyi başlat</b>'a bas.</div>
     <div id="rp-chips" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:12px">${MODES.map(([v, t]) => `<button type="button" data-m="${v}" style="${chip}">${t}</button>`).join('')}</div>
     <div id="rp-custom" style="display:none">Başlangıç tarihi<input id="rp-from" type="date" style="${fld}">Bitiş tarihi (boşsa bugün)<input id="rp-to" type="date" style="${fld}"></div>
     <div id="rp-last" style="display:none">Kaç sipariş? (en yeniden başlayarak)<input id="rp-n" type="number" min="1" value="20" style="${fld}"></div>
-    <div id="rp-sum" style="background:#eef4ff;border-radius:6px;padding:8px 10px;margin-bottom:12px"></div>
-    <button id="rp-go" type="button" style="width:100%;padding:10px;font:inherit;font-weight:600;cursor:pointer;border:0;border-radius:8px;background:#f27a1a;color:#fff">İndirmeyi başlat</button>`;
+    <div id="rp-sum" style="background:${T.tint};border-radius:6px;padding:8px 10px;margin-bottom:12px"></div>
+    <button id="rp-go" type="button" style="width:100%;padding:10px;font:inherit;font-weight:600;cursor:pointer;border:0;border-radius:8px;background:${T.accent};color:${T.accentText}">İndirmeyi başlat</button></div>`;
   document.body.appendChild(p);
   const $ = id => p.querySelector('#' + id);
   const fmt = d => d.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -32,7 +41,7 @@ const askRange = site => window.RANGE ? Promise.resolve(window.RANGE) : new Prom
   const refresh = () => {
     p.querySelectorAll('[data-m]').forEach(b => {
       const on = b.dataset.m === mode;
-      b.style.background = on ? '#f27a1a' : '#f5f5f5'; b.style.color = on ? '#fff' : '#222'; b.style.borderColor = on ? '#f27a1a' : '#bbb';
+      b.style.background = on ? T.accent : '#f5f5f5'; b.style.color = on ? T.accentText : '#222'; b.style.borderColor = on ? T.accent : '#bbb';
     });
     $('rp-custom').style.display = mode === 'custom' ? '' : 'none';
     $('rp-last').style.display = mode === 'last' ? '' : 'none';
@@ -67,7 +76,7 @@ const rangePos = date => { const d = String(date).slice(0, 10); return !/^\d{4}-
 document.getElementById('hb-progress')?.remove();
 const box = document.createElement('div');
 box.id = 'hb-progress';
-box.style.cssText = 'position:fixed;left:12px;bottom:12px;z-index:999999;background:#222;color:#fff;padding:10px 14px;border-radius:8px;font:14px/1.4 monospace;max-width:420px';
+box.style.cssText = `position:fixed;left:12px;bottom:12px;z-index:999999;background:${THEMES['Hepsiburada'].head};color:${THEMES['Hepsiburada'].headText};padding:10px 14px;border-radius:8px;font:14px/1.4 monospace;max-width:420px`;
 document.body.appendChild(box);
 const say = t => { box.textContent = t; console.log('[HB] ' + t); };
 
