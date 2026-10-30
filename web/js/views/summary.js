@@ -38,11 +38,12 @@
       const note = h('p', { class: 'muted small rate-note' },
         'Dolar: alış gününün USD/TRY kuru, Frankfurter (açık kaynak API, Avrupa Merkez Bankası referans kuru; hafta sonu ve tatilde önceki iş günü). ',
         'Bankanın uyguladığı kurdan farklıdır, API hatalı ya da eksik veri dönebilir: dolar tutarları yaklaşıktır.');
-      // Temu: ürün tutarı + gümrük vergisi → ödenen − iade = net (harcamaya net girer)
-      const temu = items.filter(i => i.paid != null);
+      // Temu dökümü yalnız Temu tek seçiliyken: ürün tutarı + gümrük vergisi → ödenen − iade = net (harcamaya net girer)
+      const st = SD.data.state.stores;
+      const temu = st.size === 1 && st.has('temu') ? items.filter(i => i.paid != null) : [];
       const sum = k => temu.reduce((a, i) => a + (i[k] || 0), 0);
       const temuLine = temu.length ? h('p', { class: 'temu-line' },
-        h('strong', {}, 'Temu: '), `ürün ${SD.fmtTL(sum('line'))} + gümrük vergisi ${SD.fmtTL(sum('tax'))} → ödenen ${SD.fmtTL(sum('paid'))} − iade ${SD.fmtTL(sum('refund'))} = net `,
+        h('strong', {}, 'Temu net: '), `ürün ${SD.fmtTL(sum('line'))} + gümrük vergisi ${SD.fmtTL(sum('tax'))} → ödenen ${SD.fmtTL(sum('paid'))} − iade ${SD.fmtTL(sum('refund'))} = net `,
         b(SD.fmtTL(sum('net'))),
         h('span', { class: 'muted' }, ' (vergi ve iade ürünlere orantılı dağıtılır; ürün başına tutarlar çıkarımdır)')) : null;
 

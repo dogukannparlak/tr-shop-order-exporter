@@ -2,7 +2,8 @@
 (function (SD) {
   const { h } = SD;
   const STATE = { ok: 'Harcama', iade: 'İade', iptal: 'İptal' };
-  const hasTemu = rows => rows.some(r => r.paid != null);
+  // Temu dökümü (gümrük, ödenen, iade, net) yalnız tabloda sadece Temu satırları varken (Temu çipi tek seçiliyken)
+  const temuOnly = rows => rows.length > 0 && rows.every(r => r.store === 'temu');
 
   function detail(dialog, it) {
     const row = (k, v) => (v == null || v === '' ? null : h('tr', {}, h('th', {}, k), h('td', {}, v)));
@@ -55,9 +56,12 @@
         { key: 'recipient', label: 'Alıcı' },
         { key: 'category', label: 'Kategori' },
         { key: 'qty', label: 'Adet', num: true },
-        { key: 'tax', label: 'Gümrük', num: true, cls: 'nowrap', when: hasTemu, render: it => (it.tax ? SD.fmtTL(it.tax) : '—') },
-        { key: 'refund', label: 'İade', num: true, cls: 'nowrap', when: hasTemu, render: it => (it.refund ? SD.fmtTL(it.refund) : '—') },
-        { key: 'total', label: 'Tutar', num: true, cls: 'nowrap', render: it => (it.estimated ? '≈ ' : '') + SD.fmtTL(it.total) },
+        { key: 'total', label: 'Tutar', num: true, cls: 'nowrap', when: r => !temuOnly(r), render: it => (it.estimated ? '≈ ' : '') + SD.fmtTL(it.total) },
+        { key: 'line', label: 'Ürün tutarı', num: true, cls: 'nowrap', when: temuOnly, fmt: SD.fmtTL },
+        { key: 'tax', label: 'Gümrük', num: true, cls: 'nowrap', when: temuOnly, fmt: SD.fmtTL },
+        { key: 'paid', label: 'Ödenen', num: true, cls: 'nowrap', when: temuOnly, fmt: SD.fmtTL },
+        { key: 'refund', label: 'İade', num: true, cls: 'nowrap', when: temuOnly, render: it => (it.refund ? SD.fmtTL(it.refund) : '—') },
+        { key: 'net', label: 'Net', num: true, cls: 'nowrap', when: temuOnly, render: it => SD.h('strong', {}, SD.fmtTL(it.net)) },
         { key: 'usd', label: 'Dolar', num: true, cls: 'nowrap', fmt: SD.fmtUSD },
         { key: 'bank', label: 'Banka', cls: 'nowrap' },
         { key: 'card', label: 'Kart' },

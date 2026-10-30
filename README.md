@@ -76,7 +76,7 @@ Denemek için `examples/` klasörünü seç: klasörde gerçek dosya yoksa örne
 - **Banka:** yalnız site veriyorsa görünür (şu an yalnız Trendyol). Diğerlerinde `—`; kartsız ödemede yöntem yazılır (Hepsipay, Trendyol Cüzdan, Hediye çeki).
 - **Dolar:** alış gününün USD/TRY kuru, [Frankfurter](https://frankfurter.dev) (açık kaynak API, Avrupa Merkez Bankası referans kuru; hafta sonu ve tatilde önceki iş günü). API'ye yalnız tarih aralığı gönderilir, kurlar tarayıcıda (`localStorage`) saklanır. Bankanın uyguladığı kurdan farklıdır ve API hatalı/eksik dönebilir: **dolar tutarları yaklaşıktır.** API'ye ulaşılamazsa dolar sütunları boş kalır.
 - **Fiyatı olmayan ürün:** sipariş tek ürünlüyse sipariş toplamı kullanılır ve `≈` ile işaretlenir.
-- **Temu:** ürün satırları gümrük (ithalat) vergisini içermez, sipariş toplamı içerir. Panel ürün başına şunları gösterir (tabloda **Gümrük** ve **İade** sütunları, ayrıntıda hepsi; özet satırının altında Temu toplamı):
+- **Temu:** ürün satırları gümrük (ithalat) vergisini içermez, sipariş toplamı içerir. Panel ürün başına şunları gösterir (yalnız **Temu** çipi tek seçiliyken: özet satırının altında Temu net dökümü, tabloda Ürün tutarı / Gümrük / Ödenen / İade / Net sütunları; ayrıntı penceresinde her zaman):
   - **Gümrük vergisi:** siparişte ödenen ithalat vergisi, ürünlere satır tutarı oranında.
   - **Ödenen:** sipariş toplamının ürün payı (vergi dahil, kupon/kredi sonrası).
   - **İade:** Temu'nun iade kayıtları (vergi iadesi dahil), kaydın kapsadığı ürünlere ödenen oranında; kaydı olmayan iade (ör. iptal sipariş) siparişin tüm ürünlerine.
