@@ -1,6 +1,7 @@
 // Trendyol Milla "Siparişlerim" sayfası -> JSON (trendyol-milla-siparisler.json)
 // Kullanım: trendyol-milla.com/hesabim/siparislerim LİSTE sayfasında DevTools Console'a yapıştır.
 // Console filtresine [MILLA] yaz: sadece ilerleme ve hatalar görünür.
+// Yapıştırınca çıkan kutudan tarih aralığı / son N sipariş seçilir (tümü de seçilebilir).
 // (Fonksiyon içinde çalışır: aynı sayfada tekrar yapıştırınca "already declared" hatası vermez.)
 (async () => {
 const dt = ms => ms > 0 ? new Date(ms).toLocaleString('sv-SE', { hour12: false }).slice(0, 16) : '-';

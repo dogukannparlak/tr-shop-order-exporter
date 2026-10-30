@@ -1,6 +1,7 @@
 // Temu "Siparişlerin" sayfası -> JSON (temu-siparisler.json)
 // Kullanım: temu.com/tr/bgt_orders.html sayfasında (giriş yapılmış) DevTools Console'a yapıştır.
 // Console filtresine [TEMU] yaz: sadece ilerleme ve hatalar görünür.
+// Yapıştırınca çıkan kutudan tarih aralığı / son N sipariş seçilir (tümü de seçilebilir).
 // Liste: api/bg/aristotle/user_order_list (POST, imzasız çalışıyor). Detay: bgt_order_detail.html içindeki window.rawData.
 // İadeler: api/bg/jayce/parent_after_sales_list ("İadeler" sekmesi); ürüne alt sipariş no (subOrderNo) ile işlenir.
 // (Fonksiyon içinde çalışır: aynı sayfada tekrar yapıştırınca "already declared" hatası vermez.)

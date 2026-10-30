@@ -1,6 +1,7 @@
 // Amazon.com.tr "Siparişlerim" -> JSON (amazon-siparisler.json)
 // Kullanım: amazon.com.tr'ye giriş yap, Siparişlerim sayfasını aç, DevTools Console'a yapıştır.
 // Console filtresine [AMZ] yaz: sadece ilerleme ve hatalar görünür.
+// Yapıştırınca çıkan kutudan tarih aralığı / son N sipariş seçilir (tümü de seçilebilir).
 // (Fonksiyon içinde çalışır: aynı sayfada tekrar yapıştırınca "already declared" hatası vermez.)
 (async () => {
 const sleep = ms => new Promise(r => setTimeout(r, ms));

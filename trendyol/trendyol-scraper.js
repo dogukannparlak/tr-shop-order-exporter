@@ -1,6 +1,7 @@
 // Trendyol "Siparişlerim" sayfası -> JSON (trendyol-siparisler.json)
 // Kullanım: trendyol.com/hesabim/siparislerim LİSTE sayfasında DevTools Console'a yapıştır.
 // Console filtresine [TY] yaz: sadece ilerleme ve hatalar görünür.
+// Yapıştırınca çıkan kutudan tarih aralığı / son N sipariş seçilir (tümü de seçilebilir).
 const dt = ms => ms > 0 ? new Date(ms).toLocaleString('sv-SE', { hour12: false }).slice(0, 16) : '-';
 const num = x => (x === undefined || x === null || x === '') ? '-' : Number(x);
 const val = x => (x === undefined || x === null || x === '') ? '-' : x;

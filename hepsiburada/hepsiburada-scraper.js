@@ -1,6 +1,7 @@
 // Hepsiburada "Siparişlerim" sayfası -> JSON (hepsiburada-siparisler.json)
 // Kullanım: hepsiburada.com/siparislerim sayfasında DevTools Console'a yapıştır (önce F5).
 // Console filtresine [HB] yaz: sadece ilerleme ve hatalar görünür, sayfanın kendi hataları gizlenir.
+// Yapıştırınca çıkan kutudan tarih aralığı / son N sipariş seçilir (tümü de seçilebilir).
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const clean = el => el?.textContent.replace(/\s+/g, ' ').trim() || '-';
 const parseTR = s => { const n = parseFloat(String(s).replace(/[^\d,]/g, '').replace(',', '.')); return isNaN(n) ? null : n; };

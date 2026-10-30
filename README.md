@@ -6,7 +6,7 @@ Resmî API yok. Scraper'lar sitenin kendi sayfa/API isteklerini **okur**; sipari
 
 ![Gösterge paneli: özet ve aylık harcama](docs/images/panel-ozet.png)
 
-> **Not:** Scraper'lar en son **8 Ekim 2026**'da (Temu **30 Ekim 2026**'da) güncellendi. Siteler arayüzünü veya iç API'sini değiştirdiğinde bozulabilir; güncel olmayabilir ve çalışmayabilir.
+> **Not:** Scraper'lar en son **30 Ekim 2026**'da güncellendi (tarih aralığı kutusu eklendi). Siteler arayüzünü veya iç API'sini değiştirdiğinde bozulabilir; güncel olmayabilir ve çalışmayabilir.
 
 ## Hızlı başlangıç
 
@@ -14,7 +14,8 @@ Resmî API yok. Scraper'lar sitenin kendi sayfa/API isteklerini **okur**; sipari
 2. İlgili scraper dosyasının tamamını kopyala (`Cmd+A`, `Cmd+C`).
 3. `F12` → **Console**'a yapıştır, Enter. "allow pasting" uyarısı çıkarsa önce `allow pasting` yaz, sonra yeniden yapıştır.
 4. Console filtresine etiketi yaz (aşağıdaki tablo). Sayfanın kırmızı hataları gizlenir, yalnızca ilerleme görünür.
-5. Sol altta ilerleme kutusu çıkar. Bitince JSON iner; Console'daki `hatalar:` satırı kaç hata olduğunu söyler.
+5. Ortada **Hangi siparişler indirilsin?** kutusu çıkar; aralığı seç ([ayrıntı](#tarih-aralığı--son-n-sipariş)), **İndirmeyi başlat**'a bas.
+6. Sol altta ilerleme kutusu çıkar. Bitince JSON iner; Console'daki `hatalar:` satırı kaç hata olduğunu söyler.
 
 | Site | Scraper | Başlangıç sayfası | Etiket | İnen dosya |
 |---|---|---|---|---|
