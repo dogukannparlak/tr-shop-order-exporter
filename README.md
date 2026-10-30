@@ -26,14 +26,11 @@ Resmî API yok. Scraper'lar sitenin kendi sayfa/API isteklerini **okur**; sipari
 
 ### Tarih aralığı / son N sipariş
 
-Her scraper'ın başında `RANGE` ayarı var; yapıştırmadan önce düzenle. Hepsi `null` ise tüm siparişler alınır.
+Scraper'ı yapıştırınca sayfada **Hangi siparişler alınsın?** kutusu çıkar: Tümü, son 1 / 3 / 6 ay, son 1 yıl, özel tarih aralığı ya da son N sipariş. Seçip **Başlat**'a bas.
 
-```js
-const RANGE = { months: 3, from: null, to: null, last: null };   // son 3 ay
-// months: 1 | 3 | 6 | 12… son N ay · from / to: 'YYYY-AA-GG' özel aralık · last: en yeni N sipariş
-```
+Kutuyu atlamak için scraper'dan önce Console'a `window.RANGE = { months: 3, from: null, to: null, last: null }` yaz (`from` / `to`: `'YYYY-AA-GG'`).
 
-Örnekler: `{ months: 6 }`, `{ from: '2026-01-01', to: '2026-03-31' }`, `{ last: 20 }`. Liste en yeniden eskiye gittiği için tarih alt sınırında tarama durur. `to` ile eski bir aralık isterken aradaki yeni siparişler de taranır (atlanır), bu yüzden biraz daha yavaş olabilir. Temu'da iade listesi yine tam okunur.
+Liste en yeniden eskiye gittiği için tarih alt sınırında tarama durur. `to` ile eski bir aralık isterken aradaki yeni siparişler de taranır (atlanır), bu yüzden biraz daha yavaş olabilir. Temu'da iade listesi yine tam okunur. Kutu yalnız Console'da çalışan scraper'a aittir; `index.html` paneli siteye bağlanamaz.
 
 Aynı sekmede ikinci kez çalıştırmadan önce `F5` yap. Hepsiburada ve Trendyol kodları fonksiyona sarılı değil, tekrar yapıştırınca çakışır.
 

@@ -7,9 +7,41 @@ const parseTR = s => { const n = parseFloat(String(s).replace(/[^\d,]/g, '').rep
 const fmtTR = n => n == null ? '-' : n.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' TL';
 
 
-// ---- AYAR: hangi siparişler alınsın? (hepsi null = tüm siparişler) ----
-// months: son N ay (1, 3, 6, 12…) · from / to: özel aralık, 'YYYY-AA-GG' · last: en yeni N sipariş
-const RANGE = { months: null, from: null, to: null, last: null };
+// ---- AYAR: hangi siparişler alınsın? Sayfada çıkan kutudan seçilir ----
+// Kutuyu atlamak için yapıştırmadan önce window.RANGE = { months, from, to, last } tanımla (hepsi null = tüm siparişler).
+const askRange = () => window.RANGE ? Promise.resolve(window.RANGE) : new Promise(resolve => {
+  document.getElementById('range-panel')?.remove();
+  const p = document.createElement('div');
+  p.id = 'range-panel';
+  p.style.cssText = 'position:fixed;left:50%;top:18%;transform:translateX(-50%);z-index:999999;background:#222;color:#fff;padding:16px 18px;border-radius:10px;font:14px/1.6 system-ui,sans-serif;width:290px;box-shadow:0 8px 30px #0008';
+  const fld = 'width:100%;box-sizing:border-box;margin:4px 0 8px;padding:6px;font:inherit';
+  p.innerHTML = `<b>Hangi siparişler alınsın?</b>
+    <select id="rp-mode" style="${fld}">
+      <option value="all">Tümü</option><option value="1">Son 1 ay</option><option value="3">Son 3 ay</option>
+      <option value="6">Son 6 ay</option><option value="12">Son 1 yıl</option>
+      <option value="custom">Özel tarih aralığı</option><option value="last">Son N sipariş</option>
+    </select>
+    <div id="rp-custom" style="display:none">Başlangıç<input id="rp-from" type="date" style="${fld}">Bitiş<input id="rp-to" type="date" style="${fld}"></div>
+    <div id="rp-last" style="display:none">Sipariş sayısı<input id="rp-n" type="number" min="1" value="20" style="${fld}"></div>
+    <button id="rp-go" style="width:100%;padding:8px;font:inherit;cursor:pointer">Başlat</button>`;
+  document.body.appendChild(p);
+  const $ = id => p.querySelector('#' + id);
+  $('rp-mode').onchange = () => {
+    $('rp-custom').style.display = $('rp-mode').value === 'custom' ? '' : 'none';
+    $('rp-last').style.display = $('rp-mode').value === 'last' ? '' : 'none';
+  };
+  $('rp-go').onclick = () => {
+    const m = $('rp-mode').value;
+    p.remove();
+    resolve({
+      months: /^\d+$/.test(m) ? +m : null,
+      from: m === 'custom' ? $('rp-from').value || null : null,
+      to: m === 'custom' ? $('rp-to').value || null : null,
+      last: m === 'last' ? +$('rp-n').value || null : null,
+    });
+  };
+});
+const RANGE = await askRange();
 const rangeFrom = RANGE.from || (RANGE.months ? (d => (d.setMonth(d.getMonth() - RANGE.months), d.toLocaleDateString('sv-SE')))(new Date()) : null);
 const rangeTo = RANGE.to || null;
 // 'YYYY-AA-GG…' -> -1: aralıktan eski, 1: aralıktan yeni, 0: içinde (tarihi okunamayan da 0)
