@@ -45,7 +45,7 @@
           paid: paid[k],
           refund: refund[k] || null,
           net,
-          total: state === 'ok' ? net : paid[k],   // harcamada net; iade/iptalde ödenen (harcamaya girmez)
+          total: net,   // Tutar her yerde net (iade sonrası, vergi dahil); tamamı iade/iptal edilen ürünün neti 0
           estimated: false,
           recipient: SD.dash(o.address?.fullName),
           category: null,

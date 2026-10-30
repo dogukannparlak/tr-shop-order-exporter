@@ -80,7 +80,7 @@ Denemek için `examples/` klasörünü seç: klasörde gerçek dosya yoksa örne
   - **Gümrük vergisi:** siparişte ödenen ithalat vergisi, ürünlere satır tutarı oranında.
   - **Ödenen:** sipariş toplamının ürün payı (vergi dahil, kupon/kredi sonrası).
   - **İade:** Temu'nun iade kayıtları (vergi iadesi dahil), kaydın kapsadığı ürünlere ödenen oranında; kaydı olmayan iade (ör. iptal sipariş) siparişin tüm ürünlerine.
-  - **Net = Ödenen − İade.** Harcamaya net girer; tamamı iade edilen ürün iade sayılır, kısmi iadede net düşer.
+  - **Net = Ödenen − İade.** Tabloda Temu ürünlerinin **Tutar**'ı her zaman nettir (tüm mağazalar seçiliyken de). Harcamaya net girer; tamamı iade edilen ürün iade sayılır (net 0), kısmi iadede net düşer.
   - Dağıtımlar çıkarımdır. "Fiyat ayarlaması" iadelerinin tutarı Temu verisinde yok; bu ürünlerin neti fazla görünebilir.
 
 **Yapı**

@@ -12,7 +12,7 @@
       const usd = spent.reduce((a, i) => a + (i.usd || 0), 0);
       const noUsd = spent.filter(i => i.usd == null).length;
       const bad = items.filter(i => i.state !== 'ok').length;
-      const badTl = items.filter(i => i.state !== 'ok' && i.total != null).reduce((a, i) => a + i.total, 0);
+      const badTl = items.filter(i => i.state !== 'ok' && i.total != null).reduce((a, i) => a + (i.paid ?? i.total), 0);   // Temu: iade edilen ödenen
       const noPrice = items.filter(i => i.total == null).length;
       const est = items.filter(i => i.estimated).length;
       const dates = items.map(i => i.date).filter(Boolean).sort();
